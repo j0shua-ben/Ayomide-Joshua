@@ -1,4 +1,5 @@
 import './globals.css'
+import './hero-clean.css'
 
 export const metadata = {
   title: 'Ayomide Joshua — Shopify & E-commerce Growth',
