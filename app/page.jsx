@@ -39,7 +39,6 @@ export default function Home(){
         <nav className="nav-links" aria-label="Primary navigation">
           <a href="#work">Work</a>
           <a href="#services">Services</a>
-          <a href="#results">Results</a>
           <a href="#about">About</a>
         </nav>
 
@@ -51,7 +50,6 @@ export default function Home(){
       <div className="mobile-menu">
         <a href="#work" onClick={closeMenu}>Work</a>
         <a href="#services" onClick={closeMenu}>Services</a>
-        <a href="#results" onClick={closeMenu}>Results</a>
         <a href="#about" onClick={closeMenu}>About</a>
         <a className="mobile-menu-cta" href="#contact" onClick={closeMenu}>Let&apos;s talk <span>↗</span></a>
       </div>
@@ -111,11 +109,6 @@ export default function Home(){
       <section className="section" id="work"><div className="container">
         <div className="section-head"><div><div className="kicker">Selected work</div><h2>Strategy that gets into the store.</h2></div><p className="muted">A few examples of ecommerce work and growth thinking. Detailed case studies can be expanded as the portfolio grows.</p></div>
         <div className="case-grid">{cases.map((c)=><article className="case" key={c.title}><div><div className="case-tag">{c.tag}</div><h3>{c.title}</h3><p>{c.text}</p></div><div className="case-link">View case study →</div></article>)}</div>
-      </div></section>
-
-      <section className="section" id="results"><div className="container results-strip">
-        <div><div className="kicker">The CRO mindset</div><h2>Less guessing. More clarity.</h2></div>
-        <p className="muted">Every recommendation should connect back to a customer, a friction point or a business outcome. That is how the portfolio should feel — and how the work should be done.</p>
       </div></section>
 
       <section className="section" id="about"><div className="container about-box">
