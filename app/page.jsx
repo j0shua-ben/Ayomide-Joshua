@@ -25,7 +25,7 @@ export default function Home() {
       root.style.setProperty('--my', `${(event.clientY / window.innerHeight - 0.5) * 2}`)
     }
 
-    const onScroll = () => setScrolled(window.scrollY > 48)
+    const onScroll = () => setScrolled(window.scrollY > 56)
 
     window.addEventListener('pointermove', onMove, { passive: true })
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -44,7 +44,7 @@ export default function Home() {
       <header className={`nav ${scrolled ? 'nav-scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
         <div className="container nav-inner">
           <a className="brand" href="#top" onClick={closeMenu} aria-label="Ayomide Joshua home">
-            <span className="brand-mark" aria-hidden="true">AJ</span>
+            <span className="brand-mark" aria-hidden="true"><span>A</span><span>J</span></span>
             <span className="brand-copy">
               <strong>Ayomide Joshua</strong>
               <small>Shopify &amp; E-commerce Growth</small>
@@ -75,10 +75,10 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-noise" aria-hidden="true" />
           <div className="hero-grid" aria-hidden="true" />
-          <div className="hero-glow hero-glow-one" aria-hidden="true" />
-          <div className="hero-glow hero-glow-two" aria-hidden="true" />
-          <div className="hero-word hero-word-back" aria-hidden="true">CONVERT</div>
-          <div className="hero-word hero-word-front" aria-hidden="true">GROWTH</div>
+          <div className="hero-orbit orbit-one" aria-hidden="true" />
+          <div className="hero-orbit orbit-two" aria-hidden="true" />
+          <div className="hero-word" aria-hidden="true">CRO</div>
+          <div className="hero-word-small" aria-hidden="true">GROWTH</div>
 
           <div className="container hero-inner">
             <div className="hero-copy-block">
@@ -87,7 +87,7 @@ export default function Home() {
                 <span>Shopify / CRO / E-commerce growth</span>
               </div>
 
-              <h1 id="hero-title" className="hero-title" aria-label="Shopify. Built to convert.">
+              <h1 id="hero-title" className="hero-title">
                 <span className="title-line" data-text="Shopify.">Shopify<span className="title-dot">.</span></span>
                 <span className="title-line title-offset" data-text="Built to">Built to</span>
                 <span className="title-line accent-title" data-text="Convert.">Convert<span className="title-dot">.</span></span>
@@ -120,24 +120,20 @@ export default function Home() {
 
             <div className="hero-visual" aria-label="Ayomide Joshua — Shopify and e-commerce growth specialist">
               <div className="portrait-stage">
+                <div className="portrait-backdrop" aria-hidden="true" />
+                <div className="portrait-depth" aria-hidden="true" />
                 <div className="portrait-ring ring-one" aria-hidden="true" />
                 <div className="portrait-ring ring-two" aria-hidden="true" />
-                <div className="portrait-shadow" aria-hidden="true" />
                 <img src="/ayomide-headshot.svg" alt="Ayomide Joshua in a navy suit" className="portrait" />
 
-                <div className="visual-label visual-label-top">SHOPIFY <span>/</span> CRO</div>
-                <div className="visual-label visual-label-bottom">AJ <span>01 — GROWTH</span></div>
+                <div className="visual-tag visual-tag-top">SHOPIFY <span>/</span> CRO</div>
+                <div className="visual-tag visual-tag-bottom">AJ <span>01 — GROWTH</span></div>
               </div>
 
               <div className="floating-chip chip-cro" aria-hidden="true">
                 <span>FOCUS</span>
                 <strong>CRO</strong>
                 <i />
-              </div>
-
-              <div className="floating-chip chip-shopify" aria-hidden="true">
-                <strong>S</strong>
-                <span>SHOPIFY</span>
               </div>
             </div>
           </div>
