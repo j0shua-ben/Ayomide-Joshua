@@ -32,8 +32,8 @@ export default function Home(){
     <header className={`nav ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container nav-inner">
         <a className="brand" href="#top" onClick={closeMenu} aria-label="Ayomide Joshua home">
-          <img src="/aj-logo.svg" alt="AJ — Ayomide Joshua" />
-          <span><strong>Ayomide Joshua</strong><small>Shopify & E-commerce Growth</small></span>
+          <span className="brand-mark" aria-hidden="true">AJ</span>
+          <span className="brand-copy"><strong>Ayomide Joshua</strong><small>Shopify &amp; E-commerce Growth</small></span>
         </a>
 
         <nav className="nav-links" aria-label="Primary navigation">
@@ -42,7 +42,7 @@ export default function Home(){
           <a href="#about">About</a>
         </nav>
 
-        <a className="nav-cta" href="#contact">Let&apos;s talk <span>↗</span></a>
+        <a className="nav-cta" href="#contact">Start a project <span>↗</span></a>
         <button className="menu-toggle" type="button" onClick={() => setMenuOpen(v => !v)} aria-label="Toggle navigation" aria-expanded={menuOpen}>
           <span></span><span></span>
         </button>
@@ -51,23 +51,32 @@ export default function Home(){
         <a href="#work" onClick={closeMenu}>Work</a>
         <a href="#services" onClick={closeMenu}>Services</a>
         <a href="#about" onClick={closeMenu}>About</a>
-        <a className="mobile-menu-cta" href="#contact" onClick={closeMenu}>Let&apos;s talk <span>↗</span></a>
+        <a className="mobile-menu-cta" href="#contact" onClick={closeMenu}>Start a project <span>↗</span></a>
       </div>
     </header>
 
     <main id="top">
       <section className="hero" aria-labelledby="hero-title">
+        <div className="hero-grain" aria-hidden="true"></div>
         <div className="hero-grid-lines" aria-hidden="true"></div>
-        <div className="hero-glow hero-glow-one" aria-hidden="true"></div>
-        <div className="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div className="hero-light hero-light-one" aria-hidden="true"></div>
+        <div className="hero-light hero-light-two" aria-hidden="true"></div>
+        <div className="hero-background-word" aria-hidden="true">GROWTH</div>
         <div className="hero-orbit orbit-one" aria-hidden="true"></div>
         <div className="hero-orbit orbit-two" aria-hidden="true"></div>
 
         <div className="container hero-inner">
           <div className="hero-copy-block">
-            <div className="eyebrow"><span className="eyebrow-line"></span> Shopify growth / CRO</div>
-            <h1 id="hero-title">Shopify growth.<br /><span>Built to convert.</span></h1>
-            <p className="hero-copy">I help e-commerce brands improve their Shopify stores, remove buying friction and make better use of the traffic they already have.</p>
+            <div className="eyebrow"><span className="eyebrow-line"></span><span>Shopify / CRO / E-commerce growth</span></div>
+
+            <h1 id="hero-title" className="hero-title">
+              <span className="title-line title-line-one" data-text="Shopify">Shopify</span>
+              <span className="title-line title-line-two" data-text="Growth.">Growth<span className="title-period">.</span></span>
+              <span className="title-line title-line-three" data-text="Built to">Built to</span>
+              <span className="title-line title-line-four accent-title" data-text="Convert.">Convert<span className="title-period">.</span></span>
+            </h1>
+
+            <p className="hero-copy">I help e-commerce brands make their Shopify stores easier to trust, easier to use and easier to buy from — with CRO at the centre of the growth strategy.</p>
 
             <div className="actions hero-actions">
               <a className="btn btn-primary" href="#contact">Start a project <span>↗</span></a>
@@ -76,23 +85,31 @@ export default function Home(){
 
             <div className="hero-proof" aria-label="Experience and specialization">
               <div className="proof-item"><strong>3+ Years</strong><span>E-commerce experience</span></div>
-              <div className="proof-item"><strong>Shopify</strong><span>Management & optimization</span></div>
+              <div className="proof-item"><strong>Shopify</strong><span>Management &amp; optimization</span></div>
               <div className="proof-item"><strong>CRO-first</strong><span>Conversion-led thinking</span></div>
             </div>
           </div>
 
           <div className="hero-visual" aria-label="Ayomide Joshua — Shopify and e-commerce growth specialist">
-            <div className="hero-word" aria-hidden="true">AJ</div>
-            <div className="hero-frame">
-              <div className="frame-topline"><span>AYOMIDE JOSHUA</span><span>01 / GROWTH</span></div>
+            <div className="hero-monogram" aria-hidden="true">AJ</div>
+            <div className="portrait-stage">
+              <div className="portrait-halo" aria-hidden="true"></div>
+              <div className="portrait-backplate" aria-hidden="true"></div>
               <div className="portrait-wrap">
                 <img src="/ayomide-headshot.svg" alt="Ayomide Joshua in a navy suit" className="portrait" />
-                <div className="portrait-shade" aria-hidden="true"></div>
               </div>
-              <div className="frame-caption"><span>SHOPIFY</span><span>CRO / E-COMMERCE</span></div>
+              <div className="portrait-edge" aria-hidden="true"></div>
+              <div className="portrait-label label-top">SHOPIFY <span>/</span> CRO</div>
+              <div className="portrait-label label-bottom">AYOMIDE JOSHUA <span>01 — GROWTH</span></div>
             </div>
-            <div className="floating-chip chip-top"><span className="chip-dot"></span> Conversion focused</div>
-            <div className="floating-chip chip-bottom">Store optimization <span>↗</span></div>
+
+            <div className="floating-object object-shopify" aria-hidden="true">
+              <div className="object-icon">S</div><span>SHOPIFY</span>
+            </div>
+            <div className="floating-object object-cro" aria-hidden="true">
+              <span className="object-small">FOCUS</span><strong>CRO</strong><i></i>
+            </div>
+            <div className="floating-object object-growth" aria-hidden="true">GROWTH <span>↗</span></div>
           </div>
         </div>
 
@@ -113,11 +130,11 @@ export default function Home(){
 
       <section className="section" id="about"><div className="container about-box">
         <div><div className="kicker">About</div><h2>An ecommerce specialist who thinks beyond the homepage.</h2><p>I’m Ayomide, a Shopify manager and CRO-focused ecommerce specialist. I work across store operations, customer experience and conversion strategy so brands can improve the storefront without losing sight of the business behind it.</p><p>My approach is practical: understand what is happening, identify the biggest opportunities, then turn them into changes that can actually be implemented.</p></div>
-        <div className="about-list"><div><strong>Shopify</strong><span>Store management, customization & optimization</span></div><div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages & checkout</span></div><div><strong>E-commerce operations</strong><span>Products, merchandising, QA & ongoing support</span></div></div>
+        <div className="about-list"><div><strong>Shopify</strong><span>Store management, customization &amp; optimization</span></div><div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages &amp; checkout</span></div><div><strong>E-commerce operations</strong><span>Products, merchandising, QA &amp; ongoing support</span></div></div>
       </div></section>
 
       <section className="section" id="contact"><div className="container"><div className="contact"><div className="kicker">Have a store to improve?</div><h2>Let&apos;s find the opportunities hiding in your customer journey.</h2><p>Tell me what you are working on, where the store is struggling, or simply send the storefront. We can start from there.</p><div className="actions"><a className="btn btn-primary" href="mailto:joshuaben023@gmail.com?subject=Shopify%20Store%20Project">Email me →</a><a className="btn btn-secondary" href="#work">See the work</a></div></div></div></section>
     </main>
-    <footer className="footer"><div className="container">© {new Date().getFullYear()} Ayomide Joshua. Shopify & E-commerce Growth.</div></footer>
+    <footer className="footer"><div className="container">© {new Date().getFullYear()} Ayomide Joshua. Shopify &amp; E-commerce Growth.</div></footer>
   </>
 }
