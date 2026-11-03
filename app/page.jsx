@@ -8,9 +8,23 @@ const services = [
   ['03', 'Store Optimization', 'UX, mobile experience, trust signals, product presentation, speed priorities and ecommerce growth opportunities.'],
 ]
 
+const expertise = [
+  ['Shopify Marketing', 'Store growth support across merchandising, campaigns, product presentation and customer experience.'],
+  ['Wix Website Design', 'Conversion-focused website design and redesign for service businesses that need a clearer path to enquiry.'],
+  ['Analytics & Tracking', 'GA4, Google Search Console and practical tracking foundations for understanding what visitors actually do.'],
+  ['Other Digital Support', 'Additional ecommerce and digital execution where it supports the bigger growth objective.'],
+]
+
 const cases = [
   { tag: 'CRO / E-COMMERCE', title: 'Mistfall', text: 'A focused Shopify recovery and CRO roadmap covering product pages, homepage structure, mobile UX, cart and checkout friction.' },
   { tag: 'FRAGRANCE E-COMMERCE', title: 'ScentsAppeal', text: 'Conversion-minded merchandising and premium commercial creative direction for a fragrance ecommerce brand.' },
+]
+
+const faqs = [
+  ['What kind of Shopify work do you take on?', 'I work across Shopify management, CRO, store optimization, product and merchandising work, UX improvements and ongoing ecommerce support.'],
+  ['Do you only work on CRO?', 'No. CRO is the way I think about the store, but the actual work can include management, UX, product pages, merchandising, technical cleanup and other Shopify growth tasks.'],
+  ['Can you work with an existing Shopify store?', 'Yes. Most projects start with an existing store, its current customer journey and the biggest opportunities for improvement.'],
+  ['How do we start?', 'Send the store link and a short description of what you want to improve. I can then recommend the most useful starting point.'],
 ]
 
 export default function Home() {
@@ -25,7 +39,7 @@ export default function Home() {
       root.style.setProperty('--my', `${(event.clientY / window.innerHeight - 0.5) * 2}`)
     }
 
-    const onScroll = () => setScrolled(window.scrollY > 56)
+    const onScroll = () => setScrolled(window.scrollY > 40)
 
     window.addEventListener('pointermove', onMove, { passive: true })
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -54,7 +68,9 @@ export default function Home() {
           <nav className="nav-links" aria-label="Primary navigation">
             <a href="#work">Work</a>
             <a href="#services">Services</a>
+            <a href="#expertise">Expertise</a>
             <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
           </nav>
 
           <a className="nav-cta" href="#contact">Start a project <span>↗</span></a>
@@ -66,19 +82,18 @@ export default function Home() {
         <div className="mobile-menu">
           <a href="#work" onClick={closeMenu}>Work</a>
           <a href="#services" onClick={closeMenu}>Services</a>
+          <a href="#expertise" onClick={closeMenu}>Expertise</a>
           <a href="#about" onClick={closeMenu}>About</a>
+          <a href="#faq" onClick={closeMenu}>FAQ</a>
           <a className="mobile-menu-cta" href="#contact" onClick={closeMenu}>Start a project <span>↗</span></a>
         </div>
       </header>
 
       <main id="top">
         <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-noise" aria-hidden="true" />
-          <div className="hero-grid" aria-hidden="true" />
-          <div className="hero-orbit orbit-one" aria-hidden="true" />
-          <div className="hero-orbit orbit-two" aria-hidden="true" />
-          <div className="hero-word" aria-hidden="true">CRO</div>
-          <div className="hero-word-small" aria-hidden="true">GROWTH</div>
+          <div className="hero-glow" aria-hidden="true" />
+          <div className="hero-outline-word" aria-hidden="true">CRO</div>
+          <div className="hero-line" aria-hidden="true" />
 
           <div className="container hero-inner">
             <div className="hero-copy-block">
@@ -94,46 +109,27 @@ export default function Home() {
               </h1>
 
               <p className="hero-copy">
-                I help e-commerce brands make their Shopify stores easier to trust, easier to use and easier to buy from — with CRO at the centre of the growth strategy.
+                I help e-commerce brands turn Shopify stores into clearer, easier and more convincing buying experiences — with conversion at the centre.
               </p>
 
               <div className="actions hero-actions">
                 <a className="btn btn-primary" href="#contact">Start a project <span>↗</span></a>
-                <a className="btn btn-secondary" href="#work"><span className="play-mark">↗</span> View my work</a>
+                <a className="btn btn-secondary" href="#work">View my work <span>↗</span></a>
               </div>
 
-              <div className="hero-proof" aria-label="Experience and specialization">
-                <div className="proof-item">
-                  <strong>3+ Years</strong>
-                  <span>E-commerce experience</span>
-                </div>
-                <div className="proof-item">
-                  <strong>Shopify</strong>
-                  <span>Management &amp; optimization</span>
-                </div>
-                <div className="proof-item">
-                  <strong>CRO-first</strong>
-                  <span>Conversion-led thinking</span>
-                </div>
+              <div className="hero-meta">
+                <span><strong>3+</strong> years in ecommerce</span>
+                <span><i /> Shopify management + CRO</span>
               </div>
             </div>
 
             <div className="hero-visual" aria-label="Ayomide Joshua — Shopify and e-commerce growth specialist">
-              <div className="portrait-stage">
-                <div className="portrait-backdrop" aria-hidden="true" />
-                <div className="portrait-depth" aria-hidden="true" />
-                <div className="portrait-ring ring-one" aria-hidden="true" />
-                <div className="portrait-ring ring-two" aria-hidden="true" />
-                <img src="/ayomide-headshot.svg" alt="Ayomide Joshua in a navy suit" className="portrait" />
-
-                <div className="visual-tag visual-tag-top">SHOPIFY <span>/</span> CRO</div>
-                <div className="visual-tag visual-tag-bottom">AJ <span>01 — GROWTH</span></div>
-              </div>
-
-              <div className="floating-chip chip-cro" aria-hidden="true">
-                <span>FOCUS</span>
-                <strong>CRO</strong>
-                <i />
+              <div className="portrait-light" aria-hidden="true" />
+              <div className="portrait-word" aria-hidden="true">SHOPIFY</div>
+              <img src="/ayomide-headshot-cutout.svg" alt="Ayomide Joshua in a navy suit" className="portrait" />
+              <div className="portrait-label">
+                <span>AJ / 01</span>
+                <strong>Shopify<br />CRO</strong>
               </div>
             </div>
           </div>
@@ -155,6 +151,24 @@ export default function Home() {
               {services.map(([number, title, description]) => (
                 <article className="card" key={number}>
                   <span className="card-number">{number}</span>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-dark" id="expertise">
+          <div className="container">
+            <div className="section-head">
+              <div><div className="kicker">Other areas of expertise</div><h2>More than one way to support the store.</h2></div>
+              <p className="muted">The wider skill set is here when the project needs it — without taking the focus away from Shopify growth.</p>
+            </div>
+            <div className="expertise-grid">
+              {expertise.map(([title, description], index) => (
+                <article className="expertise-item" key={title}>
+                  <span>0{index + 1}</span>
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </article>
@@ -192,6 +206,23 @@ export default function Home() {
               <div><strong>Shopify</strong><span>Store management, customization &amp; optimization</span></div>
               <div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages &amp; checkout</span></div>
               <div><strong>E-commerce operations</strong><span>Products, merchandising, QA &amp; ongoing support</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="faq">
+          <div className="container">
+            <div className="section-head">
+              <div><div className="kicker">FAQ</div><h2>Useful answers before we talk.</h2></div>
+              <p className="muted">A few of the questions buyers usually want answered before starting a Shopify project.</p>
+            </div>
+            <div className="faq-list">
+              {faqs.map(([question, answer]) => (
+                <details key={question}>
+                  <summary>{question}<span>+</span></summary>
+                  <p>{answer}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>
