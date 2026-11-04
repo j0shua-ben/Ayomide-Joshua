@@ -87,25 +87,47 @@ export default function Home() {
       </header>
 
       <main id="top">
-        <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-backdrop-word" aria-hidden="true">CRO</div>
-          <div className="hero-grid container">
+        <section className="hero-simple" aria-labelledby="hero-title">
+          <div className="container hero-inner">
             <div className="hero-copy-block">
-              <div className="eyebrow"><span className="eyebrow-line" /><span>Shopify / CRO / E-commerce growth</span></div>
-              <h1 id="hero-title" className="hero-title"><span>Shopify.</span><span>Built to</span><span className="accent-title">Convert.</span></h1>
-              <p className="hero-copy">I help e-commerce brands make their Shopify stores easier to trust, easier to use and easier to buy from — with CRO at the centre of the growth strategy.</p>
-              <div className="actions hero-actions"><a className="btn btn-primary" href="#contact">Start a project <span>↗</span></a><a className="btn btn-secondary" href="#work">View my work <span>↗</span></a></div>
-              <div className="hero-proof"><span><strong>3+</strong> years</span><span>Shopify management</span><span>CRO-led thinking</span></div>
+              <div className="eyebrow">
+                <span className="eyebrow-line" />
+                <span>Shopify / CRO / E-commerce growth</span>
+              </div>
+
+              <h1 id="hero-title" className="hero-title">
+                <span className="title-line">Shopify.</span>
+                <span className="title-line title-offset">Built to</span>
+                <span className="title-line accent-title">Convert.</span>
+              </h1>
+
+              <p className="hero-copy">
+                I help e-commerce brands turn more visits into confident purchases through
+                thoughtful Shopify management, sharper customer experiences and practical CRO.
+              </p>
+
+              <div className="actions hero-actions">
+                <a className="btn btn-primary" href="#contact">Start a project <span>↗</span></a>
+                <a className="btn btn-secondary" href="#work">View selected work <span>↗</span></a>
+              </div>
+
+              <div className="hero-meta" aria-label="Areas of experience">
+                <span><strong>5+</strong> years of experience</span>
+                <span><i /> Shopify management</span>
+                <span><i /> CRO-led growth</span>
+              </div>
             </div>
 
-            <div className="hero-art" aria-label="Ayomide Joshua — Shopify and e-commerce growth specialist">
-              <div className="hero-art-line" aria-hidden="true" />
-              <div className="hero-art-label"><span>01</span><strong>SHOPIFY</strong><small>GROWTH / CRO</small></div>
-              <img src={heroPortrait} alt="Ayomide Joshua in a navy suit" className="hero-portrait" />
-              <div className="hero-art-note" aria-hidden="true">Make the store<br />work harder.</div>
+            <div className="hero-visual" aria-label="Ayomide Joshua, Shopify and e-commerce growth specialist">
+              <div className="hero-visual-wash" aria-hidden="true" />
+              <img
+                src={heroPortrait}
+                alt="Ayomide Joshua wearing a navy suit"
+                className="portrait"
+                fetchPriority="high"
+              />
             </div>
           </div>
-          <div className="hero-bottom container" aria-hidden="true"><span>Scroll to explore</span><span className="hero-bottom-line" /></div>
         </section>
 
         <section className="section" id="services"><div className="container"><div className="section-head"><div><div className="kicker">What I do</div><h2>Built around the parts that affect growth.</h2></div><p className="muted">Not just a prettier storefront. The goal is a clearer buying journey, less friction and a store your team can confidently operate.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
