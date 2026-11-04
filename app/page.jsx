@@ -102,8 +102,7 @@ export default function Home() {
               </h1>
 
               <p className="hero-copy">
-                I help e-commerce brands turn more visits into confident purchases through
-                thoughtful Shopify management, sharper customer experiences and practical CRO.
+                I help growing brands make their Shopify stores easier to trust, easier to use and easier to buy from — combining hands-on management with conversion-focused design and practical CRO.
               </p>
 
               <div className="actions hero-actions">
@@ -112,7 +111,7 @@ export default function Home() {
               </div>
 
               <div className="hero-meta" aria-label="Areas of experience">
-                <span><strong>5+</strong> years of experience</span>
+                <span><strong>5+</strong> years in e-commerce</span>
                 <span><i /> Shopify management</span>
                 <span><i /> CRO-led growth</span>
               </div>
