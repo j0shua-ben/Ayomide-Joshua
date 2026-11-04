@@ -1,30 +1,8 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import styles from './HeroSection.module.css'
 
 export default function HeroSection() {
-  const [portraitAvailable, setPortraitAvailable] = useState(true)
-
-  useEffect(() => {
-    const root = document.documentElement
-    let frame = 0
-    const onPointerMove = (event) => {
-      if (frame) cancelAnimationFrame(frame)
-      frame = requestAnimationFrame(() => {
-        const x = (event.clientX / window.innerWidth - 0.5) * 2
-        const y = (event.clientY / window.innerHeight - 0.5) * 2
-        root.style.setProperty('--hero-pointer-x', x.toFixed(3))
-        root.style.setProperty('--hero-pointer-y', y.toFixed(3))
-      })
-    }
-    window.addEventListener('pointermove', onPointerMove, { passive: true })
-    return () => {
-      window.removeEventListener('pointermove', onPointerMove)
-      if (frame) cancelAnimationFrame(frame)
-    }
-  }, [])
-
   return (
     <section className={styles.hero} aria-labelledby="hero-title">
       <div className={styles.ambient} aria-hidden="true" />
@@ -66,15 +44,12 @@ export default function HeroSection() {
         </div>
 
         <div className={styles.portraitStage} aria-label="Portrait of Ayomide Joshua">
-          {portraitAvailable && (
-            <img
-              className={styles.portrait}
-              src="/ayomide-headshot.png"
-              alt="Ayomide Joshua"
-              fetchPriority="high"
-              onError={() => setPortraitAvailable(false)}
-            />
-          )}
+          <img
+            className={styles.portrait}
+            src="/ayomide-headshot.png"
+            alt="Ayomide Joshua"
+            fetchPriority="high"
+          />
           <div className={styles.portraitCaption} aria-hidden="true">
             <span>AYOMIDE JOSHUA</span>
             <span>SHOPIFY / CRO</span>
