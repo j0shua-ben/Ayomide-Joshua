@@ -58,10 +58,10 @@ export default function Home() {
   const closeMenu = () => setMenuOpen(false)
 
   const navItems = [
-    ['Work', '#work'],
     ['Services', '#services'],
-    ['Expertise', '#expertise'],
     ['Process', '#process'],
+    ['Expertise', '#expertise'],
+    ['Work', '#work'],
     ['About', '#about'],
     ['FAQ', '#faq'],
   ]
