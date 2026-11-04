@@ -38,7 +38,7 @@ export default function Home() {
       <SiteNav />
 
       <main id="top">
-        <HeroSection />section>
+        <HeroSection />
 
         <section className="section" id="services"><div className="container"><div className="section-head"><div><div className="kicker">What I do</div><h2>Built around the parts that affect growth.</h2></div><p className="muted">Not just a prettier storefront. The goal is a clearer buying journey, less friction and a store your team can confidently operate.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
