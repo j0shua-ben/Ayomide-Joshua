@@ -23,14 +23,14 @@ html {
 
 body {
   font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
-  background: var(--paper, #f3f0e6);
-  color: var(--ink, #151a16);
+  background: var(--paper, #f3eee5);
+  color: var(--ink, #171614);
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 ::selection {
-  background: var(--brand-emerald, #073b25);
+  background: var(--accent, #ef4b25);
   color: var(--paper, #f3f0e6);
 }
 
