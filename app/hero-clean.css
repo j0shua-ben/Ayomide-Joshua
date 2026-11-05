@@ -760,30 +760,30 @@ details p {
   gap: 22px;
   margin-top: 22px;
   padding: 0 23px;
-  border: 1px solid #171614;
+  border: 1px solid #ef4b25;
   border-radius: 4px;
-  background: #171614;
-  color: #f3eee5;
+  background: #ef4b25;
+  color: #171614;
   font-size: 12px;
   font-weight: 850;
   text-decoration: none;
-  transition: transform .25s ease, background .25s ease, border-color .25s ease;
+  transition: transform .25s ease, background .25s ease, border-color .25s ease, color .25s ease;
 }
 
 .growth-link span {
-  color: #ef4b25;
+  color: #171614;
   font-size: 17px;
 }
 
 .growth-link:hover {
   transform: translateY(-3px);
-  border-color: #ef4b25;
-  background: #ef4b25;
-  color: #171614;
+  border-color: #171614;
+  background: #171614;
+  color: #f3eee5;
 }
 
 .growth-link:hover span {
-  color: #171614;
+  color: #ef4b25;
 }
 
 .growth-visual {
