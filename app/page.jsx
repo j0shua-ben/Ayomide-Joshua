@@ -22,18 +22,24 @@ const process = [
 
 const cases = [
   {
+    number: '01',
     tag: 'SUSTAINABLE E-COMMERCE',
     title: 'Evaness Biodegradable',
-    text: 'Redesigned the Shopify storefront, improved the shopping experience through CRO, and set up and managed Google Ads campaigns.',
+    text: 'A clearer Shopify shopping experience for an everyday essentials brand. My contribution covered storefront redesign, conversion-focused improvements and Google Ads setup and campaign management.',
+    image: 'https://evaness-biodegradable.co.uk/cdn/shop/files/Interim_Main_Image.png?v=1789540905&width=1400',
+    imageAlt: 'Evaness recycled and biodegradable refuse sack packaging',
     url: 'https://evaness-biodegradable.co.uk/',
-    services: ['Shopify Redesign', 'CRO', 'Google Ads Setup & Management'],
+    services: ['Shopify Redesign', 'CRO', 'Google Ads'],
   },
   {
+    number: '02',
     tag: 'PREMIUM FOOD & BEVERAGE',
     title: "Expedition Nomad's Haven",
-    text: 'Redesigned the Shopify storefront, worked on conversion-focused improvements, and set up and managed Google Ads campaigns.',
+    text: 'A premium storefront experience for a Belgian hot chocolate brand. My contribution included Shopify redesign, conversion-focused improvements and Google Ads setup and campaign management.',
+    image: 'https://expeditionnomadshaven.co.uk/cdn/shop/files/44-belgian-milk-chocolate-flakes-1kg_jpg..jpg?v=1790171650&width=1200',
+    imageAlt: "Expedition Nomad's Haven Belgian milk chocolate flakes and hot chocolate",
     url: 'https://expeditionnomadshaven.co.uk/',
-    services: ['Shopify Redesign', 'CRO', 'Google Ads Setup & Management'],
+    services: ['Shopify Redesign', 'CRO', 'Google Ads'],
   },
 ]
 
@@ -118,11 +124,43 @@ export default function Home() {
 
         <section className="section" id="services"><div className="container"><div className="section-head"><div><div className="kicker">What I do</div><h2>Built around the parts that affect growth.</h2></div><p className="muted">Not just a prettier storefront. The goal is a clearer buying journey, less friction and a store your team can confidently operate.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
+        <section className="section work-section" id="work">
+          <div className="container">
+            <div className="section-head work-section-head">
+              <div>
+                <div className="kicker">04 / SELECTED WORK</div>
+                <h2>Real stores. Thoughtful improvements.</h2>
+              </div>
+              <p className="muted">A look at two Shopify projects where I contributed to the storefront experience, conversion improvements and customer acquisition.</p>
+            </div>
+            <div className="work-list">
+              {cases.map((item) => (
+                <article className="work-project" key={item.title}>
+                  <a className="work-project-visual" href={item.url} target="_blank" rel="noreferrer" aria-label={`Visit ${item.title} live store`}>
+                    <div className="work-image-frame">
+                      <img src={item.image} alt={item.imageAlt} loading="lazy" />
+                    </div>
+                    <span className="work-visual-index">{item.number} / 02</span>
+                    <span className="work-visual-link">VIEW LIVE STORE ↗</span>
+                  </a>
+                  <div className="work-project-copy">
+                    <div className="work-project-meta"><span>{item.number}</span><span>{item.tag}</span></div>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <div className="work-project-services">{item.services.map((service) => <span key={service}>{service}</span>)}</div>
+                    <a className="work-project-link" href={item.url} target="_blank" rel="noreferrer">Explore the live store <span>↗</span></a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="section section-process" id="process"><div className="container"><div className="section-head"><div><div className="kicker">How I work</div><h2>Simple process. Serious attention to the details.</h2></div><p className="muted">The work stays practical: understand what is happening, choose what matters, then make the store better.</p></div><div className="process-grid">{process.map(([number, title, description]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
         <section className="section section-dark" id="expertise"><div className="container"><div className="section-head"><div><div className="kicker">Other areas of expertise</div><h2>More than one way to support the store.</h2></div><p className="muted">The wider skill set is here when the project needs it — without taking the focus away from Shopify growth.</p></div><div className="expertise-grid">{expertise.map(([title, description], index) => <article className="expertise-item" key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
-        <section className="section" id="work"><div className="container"><div className="section-head"><div><div className="kicker">Selected work</div><h2>Real stores. Practical growth work.</h2></div><p className="muted">Two Shopify projects where I contributed across storefront redesign, conversion optimization and Google Ads campaign management.</p></div><div className="case-grid">{cases.map((item) => <article className="case" key={item.title}><div><div className="case-tag">{item.tag}</div><h3>{item.title}</h3><p>{item.text}</p><div className="case-services">{item.services.map((service) => <span key={service}>{service}</span>)}</div></div><a className="case-link" href={item.url} target="_blank" rel="noreferrer">Visit live store ↗</a></article>)}</div></div></section>
+
 
         <section className="section" id="about"><div className="container about-box"><div><div className="kicker">About</div><h2>An ecommerce specialist who thinks beyond the homepage.</h2><p>I’m Ayomide, a Shopify manager and CRO-focused ecommerce specialist. I work across store operations, customer experience and conversion strategy so brands can improve the storefront without losing sight of the business behind it.</p><p>My approach is practical: understand what is happening, identify the biggest opportunities, then turn them into changes that can actually be implemented.</p></div><div className="about-list"><div><strong>Shopify</strong><span>Store management, customization &amp; optimization</span></div><div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages &amp; checkout</span></div><div><strong>Google Ads</strong><span>Campaign setup, management &amp; optimization</span></div><div><strong>E-commerce operations</strong><span>Products, merchandising, QA &amp; ongoing support</span></div></div></div></section>
 
