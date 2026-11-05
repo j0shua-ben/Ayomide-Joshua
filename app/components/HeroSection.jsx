@@ -14,9 +14,8 @@ export default function HeroSection() {
           </p>
 
           <h1 id="hero-title" className={styles.title}>
-            <span className={styles.titleLine}>Shopify stores.</span>
-            <span className={styles.titleLine}>Built to</span>
-            <span className={styles.titleAccent}>sell<span className={styles.period}>.</span></span>
+            <span className={styles.titleLine}>SHOPIFY STORE</span>
+            <span className={styles.titleLine}><span>BUILT TO</span> <span className={styles.titleAccent}>SELL</span></span>
           </h1>
 
           <p className={styles.description}>
