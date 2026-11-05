@@ -1253,6 +1253,11 @@ details p {
 
 .growth-pillar {
   padding: 24px 34px 0 0;
+  transition: transform .35s ease;
+}
+
+.growth-pillar:hover {
+  transform: translateY(-4px);
 }
 
 .growth-pillar + .growth-pillar {
@@ -1271,8 +1276,14 @@ details p {
 }
 
 .growth-pillar-icon {
+  display: inline-block;
   color: #ef4b25;
   font-size: 22px;
+  transition: transform .3s ease;
+}
+
+.growth-pillar:hover .growth-pillar-icon {
+  transform: translate(3px, -3px);
 }
 
 .growth-pillar h3 {
@@ -1416,6 +1427,8 @@ details p {
     animation: none !important;
   }
   .growth-link,
+  .growth-pillar,
+  .growth-pillar-icon,
   .growth-pillar-rule span {
     transition: none !important;
   }
