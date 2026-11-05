@@ -732,6 +732,7 @@ details p {
   line-height: .91;
   letter-spacing: -.075em;
   font-weight: 950;
+  font-family: "Archivo Black", "Manrope", sans-serif;
 }
 
 .growth-copy h2 span {
