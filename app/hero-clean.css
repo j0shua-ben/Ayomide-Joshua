@@ -699,7 +699,7 @@ details p {
   overflow: hidden;
   background: #f3eee5;
   color: #171614;
-  padding-top: 112px;
+  padding-top: 42px;
   padding-bottom: 118px;
 }
 
@@ -726,12 +726,12 @@ details p {
 }
 
 .growth-copy h2 {
-  margin: 26px 0 22px;
-  max-width: 610px;
-  font-size: clamp(43px, 5.2vw, 72px);
-  line-height: .99;
-  letter-spacing: -.065em;
-  font-weight: 900;
+  margin: 20px 0 22px;
+  max-width: 520px;
+  font-size: clamp(54px, 6.1vw, 82px);
+  line-height: .91;
+  letter-spacing: -.075em;
+  font-weight: 950;
 }
 
 .growth-copy h2 span {
@@ -933,32 +933,69 @@ details p {
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(10px 14px 12px rgba(58,43,30,.17));
 }
 
-.growth-product-art span {
-  width: 72px;
-  height: 112px;
-  border-radius: 11px 11px 8px 8px;
-  background: linear-gradient(110deg,#b8a18a,#e4d4c1 45%,#9c8068);
-  box-shadow: 10px 12px 18px rgba(58,43,30,.16);
-}
-
-.growth-product-art i {
+.growth-product-cap {
   position: absolute;
-  top: 9px;
-  left: calc(50% - 10px);
-  width: 20px;
-  height: 17px;
-  background: #544638;
-  border-radius: 3px 3px 0 0;
+  z-index: 2;
+  top: 17px;
+  left: calc(50% - 11px);
+  width: 22px;
+  height: 23px;
+  border-radius: 4px 4px 2px 2px;
+  background: linear-gradient(90deg,#40352b,#75614d 48%,#3d3329);
+  box-shadow: inset 2px 0 2px rgba(255,255,255,.16);
 }
 
-.growth-product-art b {
+.growth-product-bottle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 111px;
+  margin-top: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(107,81,59,.25);
+  border-radius: 10px 10px 8px 8px;
+  background: linear-gradient(100deg,#a98d72 0%,#d9c4aa 19%,#f0e4d4 43%,#c7ad91 72%,#987b62 100%);
+  box-shadow: inset 5px 0 8px rgba(255,255,255,.23), inset -5px 0 8px rgba(77,54,35,.12);
+  color: #5b4939;
+  text-align: center;
+}
+
+.growth-bottle-highlight {
   position: absolute;
-  width: 42px;
-  height: 24px;
-  border-top: 1px solid rgba(61,46,33,.5);
-  border-bottom: 1px solid rgba(61,46,33,.5);
+  top: 4px;
+  left: 9px;
+  width: 8px;
+  height: 96px;
+  border-radius: 99px;
+  background: rgba(255,255,255,.22);
+  filter: blur(2px);
+}
+
+.growth-bottle-brand {
+  font-size: 6px;
+  font-weight: 900;
+  letter-spacing: .18em;
+}
+
+.growth-bottle-name {
+  margin-top: 9px;
+  font-family: Georgia,serif;
+  font-size: 9px;
+  line-height: 1.05;
+  letter-spacing: .04em;
+}
+
+.growth-bottle-detail {
+  position: absolute;
+  bottom: 10px;
+  font-size: 4px;
+  letter-spacing: .08em;
 }
 
 .growth-store-bottom {
@@ -1008,24 +1045,52 @@ details p {
   background: #e8e0d4;
 }
 
-.growth-mobile-art i {
+.growth-mobile-product {
   position: absolute;
-  width: 42px;
-  height: 76px;
-  left: calc(50% - 21px);
-  top: 21px;
-  border-radius: 7px;
-  background: linear-gradient(110deg,#b8a18a,#e4d4c1 45%,#9c8068);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 8px 5px rgba(58,43,30,.2));
 }
 
-.growth-mobile-art b {
+.growth-mobile-cap {
   position: absolute;
-  width: 22px;
-  height: 13px;
-  left: calc(50% - 11px);
-  top: 53px;
-  border-top: 1px solid rgba(61,46,33,.5);
-  border-bottom: 1px solid rgba(61,46,33,.5);
+  z-index: 2;
+  top: 23px;
+  width: 13px;
+  height: 14px;
+  border-radius: 3px 3px 1px 1px;
+  background: linear-gradient(90deg,#40352b,#75614d 48%,#3d3329);
+}
+
+.growth-mobile-bottle {
+  position: relative;
+  width: 43px;
+  height: 72px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(107,81,59,.25);
+  border-radius: 7px 7px 6px 6px;
+  background: linear-gradient(100deg,#a98d72 0%,#d9c4aa 19%,#f0e4d4 43%,#c7ad91 72%,#987b62 100%);
+  color: #5b4939;
+  text-align: center;
+}
+
+.growth-mobile-bottle b {
+  font-size: 4px;
+  letter-spacing: .14em;
+}
+
+.growth-mobile-bottle i {
+  margin-top: 6px;
+  font-family: Georgia,serif;
+  font-size: 6px;
+  line-height: 1;
+  font-style: normal;
 }
 
 .growth-mobile-lines {
