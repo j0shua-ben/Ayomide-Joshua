@@ -122,7 +122,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section" id="services"><div className="container"><div className="section-head"><div><div className="kicker">What I do</div><h2>Built around the parts that affect growth.</h2></div><p className="muted">Not just a prettier storefront. The goal is a clearer buying journey, less friction and a store your team can confidently operate.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
+        <section className="section services-section" id="services"><div className="container"><div className="section-head services-section-head"><div className="services-heading-wrap"><div className="kicker">What I do</div><h2>Shopify support.<br/><span>Built for growth.</span></h2></div><p className="muted">From day-to-day store management to conversion improvements, I make the parts of your Shopify experience work better together.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card service-card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="service-card-orbit" aria-hidden="true" /></article>)}</div></div></section>
 
         <section className="section work-section" id="work">
           <div className="container">
