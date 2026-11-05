@@ -11,7 +11,7 @@ const expertise = [
   ['Shopify Marketing', 'Store growth support across merchandising, campaigns, product presentation and customer experience.'],
   ['Wix Website Design', 'Conversion-focused website design and redesign for service businesses that need a clearer path to enquiry.'],
   ['Analytics & Tracking', 'GA4, Google Search Console and practical tracking foundations for understanding what visitors actually do.'],
-  ['Other Digital Support', 'Additional ecommerce and digital execution where it supports the bigger growth objective.'],
+  ['Google Ads', 'Campaign setup, ongoing management and optimization to support relevant traffic and ecommerce growth.'],
 ]
 
 const process = [
@@ -21,8 +21,20 @@ const process = [
 ]
 
 const cases = [
-  { tag: 'CRO / E-COMMERCE', title: 'Mistfall', text: 'A focused Shopify recovery and CRO roadmap covering product pages, homepage structure, mobile UX, cart and checkout friction.' },
-  { tag: 'FRAGRANCE E-COMMERCE', title: 'ScentsAppeal', text: 'Conversion-minded merchandising and premium commercial creative direction for a fragrance ecommerce brand.' },
+  {
+    tag: 'SUSTAINABLE E-COMMERCE',
+    title: 'Evaness Biodegradable',
+    text: 'Redesigned the Shopify storefront, improved the shopping experience through CRO, and set up and managed Google Ads campaigns.',
+    url: 'https://evaness-biodegradable.co.uk/',
+    services: ['Shopify Redesign', 'CRO', 'Google Ads Setup & Management'],
+  },
+  {
+    tag: 'PREMIUM FOOD & BEVERAGE',
+    title: "Expedition Nomad's Haven",
+    text: 'Redesigned the Shopify storefront, worked on conversion-focused improvements, and set up and managed Google Ads campaigns.',
+    url: 'https://expeditionnomadshaven.co.uk/',
+    services: ['Shopify Redesign', 'CRO', 'Google Ads Setup & Management'],
+  },
 ]
 
 const faqs = [
@@ -46,9 +58,9 @@ export default function Home() {
 
         <section className="section section-dark" id="expertise"><div className="container"><div className="section-head"><div><div className="kicker">Other areas of expertise</div><h2>More than one way to support the store.</h2></div><p className="muted">The wider skill set is here when the project needs it — without taking the focus away from Shopify growth.</p></div><div className="expertise-grid">{expertise.map(([title, description], index) => <article className="expertise-item" key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
-        <section className="section" id="work"><div className="container"><div className="section-head"><div><div className="kicker">Selected work</div><h2>Strategy that gets into the store.</h2></div><p className="muted">A few examples of ecommerce work and growth thinking. Detailed case studies can be expanded as the portfolio grows.</p></div><div className="case-grid">{cases.map((item) => <article className="case" key={item.title}><div><div className="case-tag">{item.tag}</div><h3>{item.title}</h3><p>{item.text}</p></div><div className="case-link">View case study →</div></article>)}</div></div></section>
+        <section className="section" id="work"><div className="container"><div className="section-head"><div><div className="kicker">Selected work</div><h2>Real stores. Practical growth work.</h2></div><p className="muted">Two Shopify projects where I contributed across storefront redesign, conversion optimization and Google Ads campaign management.</p></div><div className="case-grid">{cases.map((item) => <article className="case" key={item.title}><div><div className="case-tag">{item.tag}</div><h3>{item.title}</h3><p>{item.text}</p><div className="case-services">{item.services.map((service) => <span key={service}>{service}</span>)}</div></div><a className="case-link" href={item.url} target="_blank" rel="noreferrer">Visit live store ↗</a></article>)}</div></div></section>
 
-        <section className="section" id="about"><div className="container about-box"><div><div className="kicker">About</div><h2>An ecommerce specialist who thinks beyond the homepage.</h2><p>I’m Ayomide, a Shopify manager and CRO-focused ecommerce specialist. I work across store operations, customer experience and conversion strategy so brands can improve the storefront without losing sight of the business behind it.</p><p>My approach is practical: understand what is happening, identify the biggest opportunities, then turn them into changes that can actually be implemented.</p></div><div className="about-list"><div><strong>Shopify</strong><span>Store management, customization &amp; optimization</span></div><div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages &amp; checkout</span></div><div><strong>E-commerce operations</strong><span>Products, merchandising, QA &amp; ongoing support</span></div></div></div></section>
+        <section className="section" id="about"><div className="container about-box"><div><div className="kicker">About</div><h2>An ecommerce specialist who thinks beyond the homepage.</h2><p>I’m Ayomide, a Shopify manager and CRO-focused ecommerce specialist. I work across store operations, customer experience and conversion strategy so brands can improve the storefront without losing sight of the business behind it.</p><p>My approach is practical: understand what is happening, identify the biggest opportunities, then turn them into changes that can actually be implemented.</p></div><div className="about-list"><div><strong>Shopify</strong><span>Store management, customization &amp; optimization</span></div><div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages &amp; checkout</span></div><div><strong>Google Ads</strong><span>Campaign setup, management &amp; optimization</span></div><div><strong>E-commerce operations</strong><span>Products, merchandising, QA &amp; ongoing support</span></div></div></div></section>
 
         <section className="section" id="faq"><div className="container"><div className="section-head"><div><div className="kicker">FAQ</div><h2>Useful answers before we talk.</h2></div><p className="muted">A few of the questions buyers usually want answered before starting a Shopify project.</p></div><div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></div></section>
 
