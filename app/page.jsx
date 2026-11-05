@@ -57,7 +57,7 @@ export default function Home() {
             <div className="growth-intro">
               <div className="growth-copy">
                 <div className="kicker"><span className="growth-kicker-dot" /> 02 / THE E-COMMERCE ADVANTAGE</div>
-                <h2>Growth starts with <span>the experience.</span></h2>
+                <h2 className="growth-heading"><span className="growth-heading-line">TURN VISITS</span><span className="growth-heading-line growth-heading-accent">INTO SALES</span></h2>
                 <p className="growth-lede">A store performs when its storefront, buying journey and customer acquisition work together. I bring those pieces into one practical growth plan — from the first impression to the final click.</p>
                 <a className="growth-link" href="#services">See how I improve stores <span>↗</span></a>
               </div>
