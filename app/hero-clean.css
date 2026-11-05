@@ -2148,3 +2148,13 @@ details p {
     font-size: 13px;
   }
 }
+
+
+/* Keep each requested headline phrase together on its own line */
+.services-section-head h2 .services-title-left,
+.services-section-head h2 .services-title-right {
+  display: block;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
