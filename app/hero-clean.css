@@ -760,10 +760,10 @@ details p {
   gap: 22px;
   margin-top: 22px;
   padding: 0 23px;
-  border: 1px solid #ef4b25;
+  border: 1px solid #171614;
   border-radius: 4px;
-  background: #ef4b25;
-  color: #171614;
+  background: #171614;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 850;
   text-decoration: none;
@@ -771,19 +771,19 @@ details p {
 }
 
 .growth-link span {
-  color: #171614;
+  color: #ffffff;
   font-size: 17px;
 }
 
 .growth-link:hover {
   transform: translateY(-3px);
-  border-color: #171614;
-  background: #171614;
-  color: #f3eee5;
+  border-color: #ef4b25;
+  background: #ef4b25;
+  color: #ffffff;
 }
 
 .growth-link:hover span {
-  color: #ef4b25;
+  color: #ffffff;
 }
 
 .growth-visual {
