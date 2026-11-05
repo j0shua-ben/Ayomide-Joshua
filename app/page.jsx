@@ -52,6 +52,70 @@ export default function Home() {
       <main id="top">
         <HeroSection />
 
+        <section className="section growth-section" id="growth">
+          <div className="container">
+            <div className="growth-intro">
+              <div className="growth-copy">
+                <div className="kicker"><span className="growth-kicker-dot" /> 02 / THE E-COMMERCE ADVANTAGE</div>
+                <h2>Turning e-commerce potential <span>into performance.</span></h2>
+                <p className="growth-lede">A successful online store needs more than a polished design. It needs a thoughtful customer journey, a friction-aware shopping experience and marketing that brings the right people to the door.</p>
+                <a className="growth-link" href="#services">Explore how I can help <span>↗</span></a>
+              </div>
+
+              <div className="growth-visual" aria-label="Illustration of an ecommerce storefront, customer journey and advertising dashboard">
+                <div className="growth-orbit growth-orbit-one" />
+                <div className="growth-orbit growth-orbit-two" />
+                <div className="growth-visual-label">THE BIGGER PICTURE <span>01 — 03</span></div>
+                <div className="growth-store-window">
+                  <div className="growth-window-bar"><span /><span /><span /><b>YOUR STORE</b></div>
+                  <div className="growth-store-content">
+                    <div className="growth-store-nav"><strong>brand.</strong><span>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; CONTACT</span><i> BAG (0)</i></div>
+                    <div className="growth-store-hero">
+                      <div><small>MADE FOR EVERYDAY</small><strong>A better way<br/>to shop.</strong><em>Discover the collection <b>↗</b></em></div>
+                      <div className="growth-product-art"><span /><i /><b /></div>
+                    </div>
+                    <div className="growth-store-bottom"><span>FEATURED COLLECTION</span><span>01 / 04</span></div>
+                  </div>
+                </div>
+                <div className="growth-mobile-window">
+                  <div className="growth-mobile-top"><span /><b>brand.</b><span>☰</span></div>
+                  <div className="growth-mobile-art"><i /><b /></div>
+                  <div className="growth-mobile-lines"><span /><span /><span /></div>
+                  <div className="growth-mobile-button">EXPLORE COLLECTION</div>
+                </div>
+                <div className="growth-ads-card">
+                  <div className="growth-ads-head"><span className="growth-google-mark">G</span><b>CAMPAIGN OVERVIEW</b><i>↗</i></div>
+                  <div className="growth-ads-title">Reach the right audience.</div>
+                  <div className="growth-ads-bars"><span /><span /><span /><span /><span /><span /><span /></div>
+                  <div className="growth-ads-foot"><span>PLAN</span><span>LAUNCH</span><span>OPTIMIZE</span></div>
+                </div>
+                <div className="growth-visual-note"><span>DESIGN</span><b>×</b><span>CONVERSION</span><b>×</b><span>GROWTH</span></div>
+              </div>
+            </div>
+
+            <div className="growth-pillars">
+              <article className="growth-pillar">
+                <div className="growth-pillar-top"><span>01 / BUILD</span><span className="growth-pillar-icon">↗</span></div>
+                <h3>Build a better storefront.</h3>
+                <p>Shopify design and redesign focused on brand clarity, intuitive navigation and a smoother shopping experience.</p>
+                <div className="growth-pillar-rule"><span /></div>
+              </article>
+              <article className="growth-pillar">
+                <div className="growth-pillar-top"><span>02 / OPTIMIZE</span><span className="growth-pillar-icon">⌁</span></div>
+                <h3>Make every step count.</h3>
+                <p>CRO that examines product pages, trust signals and customer journeys to identify and reduce buying friction.</p>
+                <div className="growth-pillar-rule"><span /></div>
+              </article>
+              <article className="growth-pillar">
+                <div className="growth-pillar-top"><span>03 / GROW</span><span className="growth-pillar-icon">↗</span></div>
+                <h3>Reach the right people.</h3>
+                <p>Google Ads setup and campaign management, with ongoing attention to relevance, performance and optimization.</p>
+                <div className="growth-pillar-rule"><span /></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
         <section className="section" id="services"><div className="container"><div className="section-head"><div><div className="kicker">What I do</div><h2>Built around the parts that affect growth.</h2></div><p className="muted">Not just a prettier storefront. The goal is a clearer buying journey, less friction and a store your team can confidently operate.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
         <section className="section section-process" id="process"><div className="container"><div className="section-head"><div><div className="kicker">How I work</div><h2>Simple process. Serious attention to the details.</h2></div><p className="muted">The work stays practical: understand what is happening, choose what matters, then make the store better.</p></div><div className="process-grid">{process.map(([number, title, description]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
