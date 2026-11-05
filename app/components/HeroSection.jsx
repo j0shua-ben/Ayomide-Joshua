@@ -50,10 +50,6 @@ export default function HeroSection() {
             alt="Ayomide Joshua"
             fetchPriority="high"
           />
-          <div className={styles.portraitCaption} aria-hidden="true">
-            <span>AYOMIDE JOSHUA</span>
-            <span>SHOPIFY / CRO</span>
-          </div>
         </div>
       </div>
 
