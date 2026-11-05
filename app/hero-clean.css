@@ -753,36 +753,37 @@ details p {
 }
 
 .growth-link {
+  min-height: 54px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 22px;
   margin-top: 22px;
-  min-height: 52px;
-  padding: 0 22px;
-  border: 1px solid #ef4b25;
-  border-radius: 999px;
-  background: #ef4b25;
-  color: #171614;
+  padding: 0 23px;
+  border: 1px solid #171614;
+  border-radius: 4px;
+  background: #171614;
+  color: #f3eee5;
   font-size: 12px;
   font-weight: 850;
   text-decoration: none;
-  box-shadow: 0 8px 18px rgba(239,75,37,.16);
-  transition: gap .25s ease, background .25s ease, box-shadow .25s ease, transform .25s ease;
+  transition: transform .25s ease, background .25s ease, border-color .25s ease;
 }
 
 .growth-link span {
-  color: #171614;
+  color: #ef4b25;
   font-size: 17px;
 }
 
 .growth-link:hover {
-  gap: 26px;
-  background: #f36a49;
-  border-color: #f36a49;
+  transform: translateY(-3px);
+  border-color: #ef4b25;
+  background: #ef4b25;
   color: #171614;
-  box-shadow: 0 11px 22px rgba(239,75,37,.2);
-  transform: translateY(-2px);
+}
+
+.growth-link:hover span {
+  color: #171614;
 }
 
 .growth-visual {
