@@ -57,9 +57,9 @@ export default function Home() {
             <div className="growth-intro">
               <div className="growth-copy">
                 <div className="kicker"><span className="growth-kicker-dot" /> 02 / THE E-COMMERCE ADVANTAGE</div>
-                <h2>Built to <span>perform.</span></h2>
-                <p className="growth-lede">A successful online store needs more than a polished design. It needs a thoughtful customer journey, a friction-aware shopping experience and marketing that brings the right people to the door.</p>
-                <a className="growth-link" href="#services">Explore how I can help <span>↗</span></a>
+                <h2>Growth starts with <span>the experience.</span></h2>
+                <p className="growth-lede">A store performs when its storefront, buying journey and customer acquisition work together. I bring those pieces into one practical growth plan — from the first impression to the final click.</p>
+                <a className="growth-link" href="#services">See how I improve stores <span>↗</span></a>
               </div>
 
               <div className="growth-visual" aria-label="Illustration of an ecommerce storefront, customer journey and advertising dashboard">
