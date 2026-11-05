@@ -14,23 +14,23 @@ export default function HeroSection() {
           </p>
 
           <h1 id="hero-title" className={styles.title}>
-            <span className={styles.titleLine}>Shopify.</span>
+            <span className={styles.titleLine}>Shopify stores.</span>
             <span className={styles.titleLine}>Built to</span>
-            <span className={styles.titleAccent}>Convert<span className={styles.period}>.</span></span>
+            <span className={styles.titleAccent}>sell<span className={styles.period}>.</span></span>
           </h1>
 
           <p className={styles.description}>
-            I help ecommerce brands make their Shopify stores easier to trust,
-            easier to use and easier to buy from — with conversion at the centre
-            of every improvement.
+            I help ecommerce brands improve their Shopify stores through hands-on
+            management, conversion-focused design and practical growth campaigns —
+            making the buying journey clearer from first visit to checkout.
           </p>
 
           <div className={styles.actions}>
             <a className={styles.primaryAction} href="#contact">
-              Start a project <span aria-hidden="true">↗</span>
+              Talk about your store <span aria-hidden="true">↗</span>
             </a>
             <a className={styles.secondaryAction} href="#work">
-              View selected work <span aria-hidden="true">↗</span>
+              See the work <span aria-hidden="true">↗</span>
             </a>
           </div>
 
