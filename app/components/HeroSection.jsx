@@ -40,6 +40,11 @@ export default function HeroSection() {
             <span className={styles.proofDivider} aria-hidden="true" />
             <span>CRO-led execution</span>
           </div>
+
+          <div className={styles.bottomLine} aria-hidden="true">
+            <span>STRATEGY / EXPERIENCE / CONVERSION</span>
+            <span className={styles.scrollCue}><i /> SCROLL TO EXPLORE</span>
+          </div>
         </div>
 
         <div className={styles.portraitStage} aria-label="Portrait of Ayomide Joshua">
@@ -52,10 +57,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className={styles.bottomLine} aria-hidden="true">
-        <span>STRATEGY / EXPERIENCE / CONVERSION</span>
-        <span className={styles.scrollCue}><i /> SCROLL TO EXPLORE</span>
-      </div>
     </section>
   )
 }
