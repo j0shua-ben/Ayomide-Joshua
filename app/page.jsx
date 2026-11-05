@@ -57,7 +57,7 @@ export default function Home() {
             <div className="growth-intro">
               <div className="growth-copy">
                 <div className="kicker"><span className="growth-kicker-dot" /> 02 / THE E-COMMERCE ADVANTAGE</div>
-                <h2>Turning e-commerce potential <span>into performance.</span></h2>
+                <h2>Built to <span>perform.</span></h2>
                 <p className="growth-lede">A successful online store needs more than a polished design. It needs a thoughtful customer journey, a friction-aware shopping experience and marketing that brings the right people to the door.</p>
                 <a className="growth-link" href="#services">Explore how I can help <span>↗</span></a>
               </div>
@@ -72,14 +72,14 @@ export default function Home() {
                     <div className="growth-store-nav"><strong>brand.</strong><span>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; CONTACT</span><i> BAG (0)</i></div>
                     <div className="growth-store-hero">
                       <div><small>MADE FOR EVERYDAY</small><strong>A better way<br/>to shop.</strong><em>Discover the collection <b>↗</b></em></div>
-                      <div className="growth-product-art"><span /><i /><b /></div>
+                      <div className="growth-product-art" aria-label="Premium skincare bottle product mockup"><div className="growth-product-cap" /><div className="growth-product-bottle"><span className="growth-bottle-highlight" /><span className="growth-bottle-brand">FORME</span><span className="growth-bottle-name">DAILY<br/>SERUM</span><span className="growth-bottle-detail">30 ML / 1.0 FL.OZ</span></div></div>
                     </div>
                     <div className="growth-store-bottom"><span>FEATURED COLLECTION</span><span>01 / 04</span></div>
                   </div>
                 </div>
                 <div className="growth-mobile-window">
                   <div className="growth-mobile-top"><span /><b>brand.</b><span>☰</span></div>
-                  <div className="growth-mobile-art"><i /><b /></div>
+                  <div className="growth-mobile-art"><div className="growth-mobile-product"><span className="growth-mobile-cap" /><span className="growth-mobile-bottle"><b>FORME</b><i>DAILY<br/>SERUM</i></span></div></div>
                   <div className="growth-mobile-lines"><span /><span /><span /></div>
                   <div className="growth-mobile-button">EXPLORE COLLECTION</div>
                 </div>
