@@ -2259,3 +2259,49 @@ details p {
     font-size: 13px;
   }
 }
+
+
+/* Fine-tune the horizontal rhythm: close headline pair, wider paragraph separation */
+.services-section-head {
+  grid-template-columns: minmax(0, .9fr) minmax(0, .95fr) minmax(280px, 1.75fr);
+  column-gap: 0;
+}
+
+.services-section-head h2 .services-title-left {
+  padding-right: 8px;
+}
+
+.services-section-head h2 .services-title-right {
+  margin-left: 12px;
+}
+
+.services-section-head > .muted {
+  margin-left: clamp(42px, 5.2vw, 78px);
+  width: calc(100% - clamp(42px, 5.2vw, 78px));
+}
+
+@media (max-width: 900px) {
+  .services-section-head {
+    grid-template-columns: minmax(0, .9fr) minmax(0, .95fr) minmax(210px, 1.5fr);
+  }
+  .services-section-head h2 .services-title-right {
+    margin-left: 8px;
+  }
+  .services-section-head > .muted {
+    margin-left: 28px;
+    width: calc(100% - 28px);
+  }
+}
+
+@media (max-width: 700px) {
+  .services-section-head {
+    column-gap: 14px;
+  }
+  .services-section-head h2 .services-title-right {
+    margin-left: 0;
+  }
+  .services-section-head > .muted {
+    margin-left: 0;
+    width: 100%;
+  }
+}
