@@ -2325,3 +2325,48 @@ details p {
     margin-left: 0;
   }
 }
+
+
+/* Treat the two headline blocks as one paired title group */
+@media (min-width: 701px) {
+  .services-section-head {
+    grid-template-columns: max-content max-content minmax(0, 1fr);
+    column-gap: 18px;
+  }
+
+  .services-section-head h2 .services-title-left,
+  .services-section-head h2 .services-title-right {
+    width: max-content;
+    white-space: nowrap;
+  }
+
+  .services-section-head h2 .services-title-left {
+    padding: 0;
+  }
+
+  .services-section-head h2 .services-title-right {
+    margin-left: 0;
+  }
+
+  .services-section-head > .muted {
+    margin-left: clamp(34px, 4vw, 58px);
+    width: calc(100% - clamp(34px, 4vw, 58px));
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1050px) {
+  .services-section-head {
+    grid-template-columns: max-content max-content minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  .services-section-head h2 .services-title-left,
+  .services-section-head h2 .services-title-right {
+    font-size: clamp(27px, 3.2vw, 36px);
+  }
+
+  .services-section-head > .muted {
+    margin-left: 24px;
+    width: calc(100% - 24px);
+  }
+}
