@@ -1,14 +1,14 @@
 :root {
-  --paper: #f3f0e6;
-  --ink: #151a16;
-  --muted: #626b63;
-  --accent: #0b6b3a;
+  --paper: #f3eee5;
+  --ink: #171614;
+  --muted: #6e6860;
+  --accent: #ef4b25;
   --line: rgba(21, 26, 22, .15);
   --mx: 0;
   --my: 0;
-  --brand-emerald: #073b25;
-  --brand-lime: #a7f432;
-  --brand-yellow: #f5cb24;
+  --brand-emerald: #171614;
+  --brand-lime: #ef4b25;
+  --brand-yellow: #ef4b25;
 }
 
 .nav {
@@ -26,11 +26,11 @@
   align-items: center;
   gap: 30px;
   padding: 0 20px;
-  background: rgba(7, 31, 20, .97);
+  background: rgba(23, 22, 20, .97);
   border: 1px solid rgba(255,255,255,.07);
   border-radius: 24px;
   box-shadow: 0 16px 45px rgba(0,0,0,.12);
-  border-color: rgba(167, 244, 50, .12);
+  border-color: rgba(239, 75, 37, .16);
 }
 
 .nav-scrolled {
@@ -124,7 +124,7 @@
   align-items: center;
   gap: 14px;
   background: var(--brand-lime);
-  color: #102016;
+  color: #171614;
   text-decoration: none;
   padding: 14px 19px;
   border-radius: 999px;
@@ -160,14 +160,14 @@
 
 .btn-primary {
   background: var(--brand-yellow);
-  color: #151a16;
-  box-shadow: 0 9px 0 rgba(7,59,37,.12), 0 16px 28px rgba(21,26,22,.12);
+  color: #171614;
+  box-shadow: 0 9px 0 rgba(23,22,20,.12), 0 16px 28px rgba(21,26,22,.12);
 }
 
 .btn-secondary {
   background: transparent;
   border: 1.5px solid rgba(21,26,22,.28);
-  color: #151a16;
+  color: #171614;
 }
 
 .section {
@@ -176,7 +176,7 @@
 }
 
 .section-dark {
-  background: #073b25;
+  background: #171614;
   color: #f3eee5;
 }
 
@@ -212,7 +212,7 @@
   font-weight: 850;
   letter-spacing: .18em;
   text-transform: uppercase;
-  color: #0b6b3a;
+  color: #ef4b25;
 }
 
 .services {
@@ -399,7 +399,7 @@ details p {
 }
 
 .contact {
-  background: #073b25;
+  background: #171614;
   color: #f3eee5;
   border-radius: 28px;
   padding: 70px;
@@ -426,7 +426,7 @@ details p {
 
 .footer {
   padding: 28px 0;
-  background: #042819;
+  background: #171614;
   color: rgba(243,238,229,.48);
   font-size: 11px;
   border-top: 1px solid rgba(243,238,229,.08);
@@ -574,12 +574,12 @@ details p {
 }
 
 .nav-cta:hover {
-  background: #b8ff49;
+  background: #f36a49;
 }
 
 .btn-primary:hover {
-  background: #ffda3f;
-  box-shadow: 0 5px 0 rgba(7,59,37,.12), 0 18px 30px rgba(21,26,22,.17);
+  background: #f36a49;
+  box-shadow: 0 5px 0 rgba(23,22,20,.12), 0 18px 30px rgba(21,26,22,.17);
 }
 
 .btn-secondary:hover {
