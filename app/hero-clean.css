@@ -1890,3 +1890,79 @@ details p {
     transition: none !important;
   }
 }
+
+
+/* Services refinement — charcoal cards and a tighter headline/lede relationship */
+.services-section-head {
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+  column-gap: clamp(24px, 3.2vw, 52px);
+}
+
+.services-section-head h2 {
+  max-width: 850px;
+}
+
+.services-section-head > .muted {
+  max-width: 430px;
+  justify-self: start;
+  margin-top: 18px;
+}
+
+.services-section .service-card,
+.services-section .service-card:nth-child(2),
+.services-section .service-card:nth-child(3) {
+  background: linear-gradient(145deg, #242321 0%, #171614 72%, #10100f 100%);
+  border-color: rgba(239,75,37,.3);
+  box-shadow: 0 14px 32px rgba(23,22,20,.12);
+}
+
+.services-section .service-card:nth-child(2) {
+  animation-delay: -2.3s;
+}
+
+.services-section .service-card:nth-child(3) {
+  animation-delay: -4.6s;
+}
+
+.services-section .service-card:hover {
+  box-shadow: 0 24px 48px rgba(23,22,20,.24);
+}
+
+.services-section .card-number {
+  color: #ef4b25;
+}
+
+.services-section .service-card h3 {
+  color: #fff;
+}
+
+.services-section .service-card p {
+  color: rgba(255,255,255,.76);
+}
+
+.service-card-orbit {
+  border-color: rgba(239,75,37,.35);
+}
+
+.service-card-orbit::after {
+  border-color: rgba(239,75,37,.2);
+}
+
+.service-card:hover .service-card-orbit {
+  border-color: rgba(239,75,37,.7);
+}
+
+@media (max-width: 900px) {
+  .services-section-head {
+    column-gap: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-section-head {
+    column-gap: 0;
+  }
+  .services-section-head > .muted {
+    margin-top: 0;
+  }
+}
