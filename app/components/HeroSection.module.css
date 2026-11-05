@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(96px, 10vh, 120px) 0 74px;
+  padding: clamp(96px, 10vh, 120px) 0 0;
   color: var(--hero-ink);
   background: var(--hero-bg);
 }
@@ -198,6 +198,8 @@
   object-fit: contain;
   object-position: center bottom;
   filter: none;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%);
   transform: translateY(-64px);
   animation: none;
 }
@@ -220,7 +222,7 @@
 .bottomLine {
   width: min(1320px, calc(100% - 88px));
   margin: auto auto 0;
-  padding-top: 23px;
+  padding-top: 12px;
   border-top: 1px solid rgba(23,22,20,.16);
   display: flex;
   align-items: center;
@@ -269,7 +271,7 @@
   .portrait { width: min(138%, 720px); transform: translateY(-44px); }
 }
 @media (max-width: 760px) {
-  .hero { min-height: auto; padding: 96px 0 28px; }
+  .hero { min-height: auto; padding: 96px 0 0; }
   .inner { width: min(100% - 40px, 620px); min-height: 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
   .copy { padding: 8px 0 0; }
   .eyebrow { margin-bottom: 25px; font-size: 9px; }
@@ -278,9 +280,9 @@
   .actions { margin-top: 24px; }
   .proof { margin-top: 25px; }
   .portraitStage { min-height: 0; height: auto; margin-top: 0; overflow: visible; }
-  .portrait { width: min(112%, 620px); max-height: none; transform: none; }
+  .portrait { width: min(112%, 620px); max-height: none; transform: none; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%); }
   .portraitCaption { bottom: 2px; }
-  .bottomLine { width: min(100% - 40px, 620px); margin-top: 26px; }
+  .bottomLine { width: min(100% - 40px, 620px); margin-top: 8px; }
 }
 @media (max-width: 480px) {
   .hero { padding-top: 88px; }
