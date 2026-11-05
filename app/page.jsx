@@ -96,20 +96,20 @@ export default function Home() {
             <div className="growth-pillars">
               <article className="growth-pillar">
                 <div className="growth-pillar-top"><span>01 / BUILD</span><span className="growth-pillar-icon">↗</span></div>
-                <h3>Build a better storefront.</h3>
-                <p>Shopify design and redesign focused on brand clarity, intuitive navigation and a smoother shopping experience.</p>
+                <h3>Build a store customers trust.</h3>
+                <p>Create a polished, intuitive Shopify experience that makes your brand credible and helps visitors find what they need.</p>
                 <div className="growth-pillar-rule"><span /></div>
               </article>
               <article className="growth-pillar">
-                <div className="growth-pillar-top"><span>02 / OPTIMIZE</span><span className="growth-pillar-icon">⌁</span></div>
-                <h3>Make every step count.</h3>
-                <p>CRO that examines product pages, trust signals and customer journeys to identify and reduce buying friction.</p>
+                <div className="growth-pillar-top"><span>02 / OPTIMIZE</span><span className="growth-pillar-icon">↗</span></div>
+                <h3>Turn more browsers into buyers.</h3>
+                <p>Improve product pages, strengthen trust signals and remove friction from the buying journey so more visitors complete their purchase.</p>
                 <div className="growth-pillar-rule"><span /></div>
               </article>
               <article className="growth-pillar">
                 <div className="growth-pillar-top"><span>03 / GROW</span><span className="growth-pillar-icon">↗</span></div>
-                <h3>Reach the right people.</h3>
-                <p>Google Ads setup and campaign management, with ongoing attention to relevance, performance and optimization.</p>
+                <h3>Bring the right people to your store.</h3>
+                <p>Build and manage Google Ads campaigns that connect your products with relevant shoppers and support sustainable growth.</p>
                 <div className="growth-pillar-rule"><span /></div>
               </article>
             </div>
