@@ -52,7 +52,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(430px, 1.08fr);
-  align-items: start;
+  align-items: center;
   gap: clamp(12px, 2vw, 30px);
 }
 .copy {
@@ -169,7 +169,7 @@
   object-fit: contain;
   object-position: center bottom;
   filter: none;
-  transform: none;
+  transform: translateY(-64px);
   animation: none;
 }
 .portraitCaption {
@@ -210,7 +210,7 @@
   .inner { width: min(100% - 56px, 960px); grid-template-columns: minmax(0,1fr) minmax(340px,.95fr); }
   .title { font-size: clamp(68px, 8vw, 96px); }
   .portraitStage { min-height: 560px; }
-  .portrait { width: min(138%, 720px); }
+  .portrait { width: min(138%, 720px); transform: translateY(-44px); }
 }
 @media (max-width: 760px) {
   .hero { min-height: auto; padding: 96px 0 28px; }
@@ -222,7 +222,7 @@
   .actions { margin-top: 24px; }
   .proof { margin-top: 25px; }
   .portraitStage { min-height: 0; height: auto; margin-top: 0; overflow: visible; }
-  .portrait { width: min(112%, 620px); max-height: none; }
+  .portrait { width: min(112%, 620px); max-height: none; transform: none; }
   .portraitCaption { bottom: 2px; }
   .bottomLine { width: min(100% - 40px, 620px); margin-top: 26px; }
 }
