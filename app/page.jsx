@@ -168,7 +168,33 @@ export default function Home() {
 
         <section className="section" id="contact"><div className="container"><div className="contact"><div className="kicker">Have a store to improve?</div><h2>Let&apos;s find the opportunities hiding in your customer journey.</h2><p>Tell me what you are working on, where the store is struggling, or simply send the storefront. We can start from there.</p><div className="actions"><a className="btn btn-primary" href="mailto:joshuaben023@gmail.com?subject=Shopify%20Store%20Project">Email me →</a><a className="btn btn-secondary" href="#work">See the work</a></div></div></div></section>
       </main>
-      <footer className="footer"><div className="container">© {new Date().getFullYear()} Ayomide Joshua. Shopify &amp; E-commerce Growth.</div></footer>
+      <footer className="site-footer">
+        <div className="container">
+          <div className="footer-main">
+            <div className="footer-brand">
+              <a className="footer-wordmark" href="#top" aria-label="Ayomide Joshua — back to top"><span>AYOMIDE</span><span>JOSHUA</span></a>
+              <p>Thoughtful Shopify management and conversion-focused ecommerce growth.</p>
+            </div>
+            <div className="footer-column">
+              <span className="footer-label">EXPLORE</span>
+              <a href="#services">Services</a>
+              <a href="#work">Selected work</a>
+              <a href="#process">My process</a>
+              <a href="#about">About</a>
+            </div>
+            <div className="footer-column">
+              <span className="footer-label">GET IN TOUCH</span>
+              <a href="mailto:joshuaben023@gmail.com">Email me ↗</a>
+              <a href="#contact">Start a project</a>
+            </div>
+            <a className="footer-back-top" href="#top">BACK TO TOP <span>↑</span></a>
+          </div>
+          <div className="footer-bottom">
+            <span>© {new Date().getFullYear()} Ayomide Joshua. All rights reserved.</span>
+            <span>SHOPIFY · E-COMMERCE · CRO</span>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
