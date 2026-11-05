@@ -2606,3 +2606,39 @@ details p {
   margin: 0 auto;
   text-align: center;
 }
+
+
+/* Service card composition — compact cards with the content centred vertically */
+.services-section .service-card {
+  min-height: 270px;
+  padding: 26px 28px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0;
+}
+.services-section .service-card .card-number {
+  align-self: flex-start;
+  margin: 0 0 24px;
+}
+.services-section .service-card h3 {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 0 12px;
+  text-align: left;
+}
+.services-section .service-card p {
+  width: 100%;
+  max-width: 350px;
+  margin: 0;
+  text-align: left;
+}
+@media (max-width: 700px) {
+  .services-section .service-card {
+    min-height: 230px;
+    padding: 24px;
+  }
+  .services-section .service-card .card-number {
+    margin-bottom: 18px;
+  }
+}
