@@ -28,9 +28,9 @@ export default function SiteNav() {
   return (
     <header className={`nav ${scrolled ? 'nav-scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container nav-inner">
-        <a className="brand" href="#top" onClick={closeMenu} aria-label="Ayomide Joshua home">
-          <span className="brand-mark" aria-hidden="true">AJ</span>
-          <span className="brand-copy"><strong>Ayomide Joshua</strong><small>Shopify &amp; E-commerce Growth</small></span>
+        <a className="brand brand-wordmark" href="#top" onClick={closeMenu} aria-label="Ayomide Joshua home">
+          <span className="brand-name"><span>AYOMIDE</span><span>JOSHUA</span></span>
+          <span className="brand-underline" aria-hidden="true"></span>
         </a>
         <nav className="nav-links" aria-label="Primary navigation">
           {navItems.map(([label, href]) => <a key={label} href={href}>{label}</a>)}
