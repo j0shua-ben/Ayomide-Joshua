@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(142px, 15vh, 184px) 0 74px;
+  padding: clamp(96px, 10vh, 120px) 0 74px;
   color: var(--hero-ink);
   background: var(--hero-bg);
 }
@@ -213,7 +213,7 @@
   .portrait { width: min(138%, 720px); }
 }
 @media (max-width: 760px) {
-  .hero { min-height: auto; padding: 124px 0 28px; }
+  .hero { min-height: auto; padding: 96px 0 28px; }
   .inner { width: min(100% - 40px, 620px); min-height: 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
   .copy { padding: 8px 0 0; }
   .eyebrow { margin-bottom: 25px; font-size: 9px; }
@@ -227,7 +227,7 @@
   .bottomLine { width: min(100% - 40px, 620px); margin-top: 26px; }
 }
 @media (max-width: 480px) {
-  .hero { padding-top: 112px; }
+  .hero { padding-top: 88px; }
   .inner,.bottomLine { width: calc(100% - 32px); }
   .eyebrow { gap: 7px; font-size: 8px; letter-spacing: .11em; }
   .title { font-size: clamp(56px, 15.3vw, 74px); line-height: 1.06; letter-spacing: -.07em; }
