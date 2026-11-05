@@ -2305,3 +2305,23 @@ details p {
     width: 100%;
   }
 }
+
+
+/* Tighten only the gap between the two headline blocks */
+.services-section-head {
+  grid-template-columns: minmax(0, .9fr) minmax(0, .95fr) minmax(280px, 1.75fr);
+}
+
+.services-section-head h2 .services-title-left {
+  padding-right: 0;
+}
+
+.services-section-head h2 .services-title-right {
+  margin-left: 0;
+}
+
+@media (max-width: 900px) {
+  .services-section-head h2 .services-title-right {
+    margin-left: 0;
+  }
+}
