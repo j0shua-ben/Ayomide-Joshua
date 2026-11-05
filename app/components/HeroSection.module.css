@@ -61,14 +61,14 @@
   min-height: 620px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(430px, 1.08fr);
+  grid-template-columns: minmax(0, 1.02fr) minmax(420px, .98fr);
   align-items: center;
-  gap: clamp(12px, 2vw, 30px);
+  gap: clamp(28px, 4vw, 58px);
 }
 .copy {
   position: relative;
   z-index: 3;
-  max-width: 760px;
+  max-width: 590px;
   padding: 18px 0 34px;
   animation: copy-enter .75s cubic-bezier(.2,.75,.25,1) both;
 }
@@ -98,10 +98,10 @@
   margin: 0;
   color: var(--hero-ink);
   font-family: 'Archivo Black', 'Manrope', sans-serif;
-  font-size: clamp(76px, 8.2vw, 126px);
+  font-size: clamp(58px, 5.7vw, 82px);
   font-weight: 900;
-  line-height: 1.04;
-  letter-spacing: -.075em;
+  line-height: 1.02;
+  letter-spacing: -.065em;
 }
 .titleLine {
   display: block;
@@ -112,20 +112,20 @@
 }
 .titleLine:first-child { animation-delay: .12s; }
 .titleLine:nth-child(2) { animation-delay: .25s; }
-.titleLine:nth-child(2) { margin-top: .035em; margin-left: .13em; }
-.titleAccent {
-  display: block;
-  width: fit-content;
-  margin-top: .035em;
+.titleLine:nth-child(2) { margin-top: .09em; margin-left: 0; }
+ .titleAccent {
+  display: inline;
+  width: auto;
+  margin-top: 0;
   color: var(--hero-accent);
   white-space: nowrap;
   opacity: 0;
   animation: title-rise .85s cubic-bezier(.2,.75,.25,1) .38s forwards;
 }
-.period { color: var(--hero-ink); }
+
 .description {
   max-width: 520px;
-  margin: clamp(26px, 4vh, 38px) 0 0;
+  margin: clamp(22px, 3vh, 30px) 0 0;
   color: #625c55;
   font-size: 15px;
   font-weight: 500;
@@ -198,8 +198,8 @@
   object-fit: contain;
   object-position: center bottom;
   filter: none;
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.82) 68%, rgba(0,0,0,.42) 82%, transparent 96%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.82) 68%, rgba(0,0,0,.42) 82%, transparent 96%);
   transform: translateY(-64px);
   animation: none;
 }
@@ -265,8 +265,8 @@
 @keyframes copy-enter { from { opacity: 0; transform: translate3d(0,18px,0); } to { opacity: 1; transform: translate3d(0,0,0); } }
 
 @media (max-width: 1050px) {
-  .inner { width: min(100% - 56px, 960px); grid-template-columns: minmax(0,1fr) minmax(340px,.95fr); }
-  .title { font-size: clamp(68px, 8vw, 96px); }
+  .inner { width: min(100% - 56px, 960px); grid-template-columns: minmax(0,1.02fr) minmax(340px,.98fr); }
+  .title { font-size: clamp(56px, 6.2vw, 74px); }
   .portraitStage { min-height: 560px; }
   .portrait { width: min(138%, 720px); transform: translateY(-44px); }
 }
@@ -275,12 +275,12 @@
   .inner { width: min(100% - 40px, 620px); min-height: 0; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
   .copy { padding: 8px 0 0; }
   .eyebrow { margin-bottom: 25px; font-size: 9px; }
-  .title { font-size: clamp(66px, 12vw, 92px); }
+  .title { font-size: clamp(48px, 9.5vw, 72px); }
   .description { max-width: 510px; margin-top: 25px; font-size: 14px; }
   .actions { margin-top: 24px; }
   .proof { margin-top: 25px; }
   .portraitStage { min-height: 0; height: auto; margin-top: 0; overflow: visible; }
-  .portrait { width: min(112%, 620px); max-height: none; transform: none; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 76%, rgba(0,0,0,.72) 88%, transparent 100%); }
+  .portrait { width: min(112%, 620px); max-height: none; transform: none; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.82) 68%, rgba(0,0,0,.42) 82%, transparent 96%); mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.82) 68%, rgba(0,0,0,.42) 82%, transparent 96%); }
   .portraitCaption { bottom: 2px; }
   .bottomLine { width: min(100% - 40px, 620px); margin-top: 8px; }
 }
@@ -288,7 +288,7 @@
   .hero { padding-top: 88px; }
   .inner,.bottomLine { width: calc(100% - 32px); }
   .eyebrow { gap: 7px; font-size: 8px; letter-spacing: .11em; }
-  .title { font-size: clamp(56px, 15.3vw, 74px); line-height: 1.06; letter-spacing: -.07em; }
+  .title { font-size: clamp(42px, 11.5vw, 58px); line-height: 1.06; letter-spacing: -.07em; }
   .description { font-size: 13px; line-height: 1.75; }
   .actions { gap: 9px; }
   .primaryAction,.secondaryAction { min-height: 49px; gap: 12px; padding: 0 14px; font-size: 10px; }
