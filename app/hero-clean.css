@@ -2642,3 +2642,18 @@ details p {
     margin-bottom: 18px;
   }
 }
+
+
+/* Keep the Services headline on the same type scale as the hero headline.
+   Only font sizing changes here; the established three-column positioning stays intact. */
+.services-section-head h2 .services-title-left,
+.services-section-head h2 .services-title-right {
+  font-size: clamp(50px, 5.6vw, 76px);
+}
+
+@media (max-width: 700px) {
+  .services-section-head h2 .services-title-left,
+  .services-section-head h2 .services-title-right {
+    font-size: clamp(38px, 9.8vw, 56px);
+  }
+}
