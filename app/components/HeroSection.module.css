@@ -220,8 +220,12 @@
   letter-spacing: .16em;
 }
 .bottomLine {
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+  left: 0;
   width: min(1320px, calc(100% - 88px));
-  margin: auto auto 0;
+  margin: 0 auto;
   padding-top: 12px;
   border-top: 1px solid rgba(23,22,20,.16);
   display: flex;
@@ -282,11 +286,12 @@
   .portraitStage { min-height: 0; height: auto; margin-top: 0; overflow: visible; }
   .portrait { width: min(112%, 620px); max-height: none; transform: none; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.82) 68%, rgba(0,0,0,.42) 82%, transparent 96%); mask-image: linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,.82) 68%, rgba(0,0,0,.42) 82%, transparent 96%); }
   .portraitCaption { bottom: 2px; }
-  .bottomLine { width: min(100% - 40px, 620px); margin-top: 8px; }
+  .bottomLine { position: relative; right: auto; bottom: auto; left: auto; width: min(100% - 40px, 620px); margin: 8px auto 0; }
 }
 @media (max-width: 480px) {
   .hero { padding-top: 88px; }
-  .inner,.bottomLine { width: calc(100% - 32px); }
+  .inner { width: calc(100% - 32px); }
+  .bottomLine { width: calc(100% - 32px); }
   .eyebrow { gap: 7px; font-size: 8px; letter-spacing: .11em; }
   .title { font-size: clamp(42px, 11.5vw, 58px); line-height: 1.06; letter-spacing: -.07em; }
   .description { font-size: 13px; line-height: 1.75; }
