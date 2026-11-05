@@ -755,25 +755,34 @@ details p {
 .growth-link {
   display: inline-flex;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 20px;
   margin-top: 22px;
-  padding-bottom: 9px;
-  border-bottom: 1px solid rgba(23,22,20,.35);
+  min-height: 52px;
+  padding: 0 22px;
+  border: 1px solid #ef4b25;
+  border-radius: 999px;
+  background: #ef4b25;
   color: #171614;
   font-size: 12px;
   font-weight: 850;
   text-decoration: none;
-  transition: gap .25s ease, color .25s ease;
+  box-shadow: 0 8px 18px rgba(239,75,37,.16);
+  transition: gap .25s ease, background .25s ease, box-shadow .25s ease, transform .25s ease;
 }
 
 .growth-link span {
-  color: #ef4b25;
+  color: #171614;
   font-size: 17px;
 }
 
 .growth-link:hover {
-  gap: 32px;
-  color: #ef4b25;
+  gap: 26px;
+  background: #f36a49;
+  border-color: #f36a49;
+  color: #171614;
+  box-shadow: 0 11px 22px rgba(239,75,37,.2);
+  transform: translateY(-2px);
 }
 
 .growth-visual {
