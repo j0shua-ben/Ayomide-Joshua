@@ -727,15 +727,21 @@ details p {
 
 .growth-copy h2 {
   margin: 20px 0 22px;
-  max-width: 520px;
-  font-size: clamp(54px, 6.1vw, 82px);
-  line-height: .91;
-  letter-spacing: -.075em;
-  font-weight: 950;
+  max-width: 560px;
   font-family: "Archivo Black", "Manrope", sans-serif;
+  font-size: clamp(50px, 5.6vw, 76px);
+  font-weight: 900;
+  line-height: .98;
+  letter-spacing: -.065em;
+  text-transform: uppercase;
 }
 
-.growth-copy h2 span {
+.growth-heading-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.growth-heading-accent {
   color: #ef4b25;
 }
 
@@ -1319,7 +1325,8 @@ details p {
     padding-bottom: 84px;
   }
   .growth-copy h2 {
-    font-size: clamp(42px,12vw,61px);
+    font-size: clamp(38px, 9.8vw, 56px);
+    line-height: 1;
   }
   .growth-lede {
     font-size: 14px;
