@@ -44,56 +44,55 @@
 
 .brand {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
   min-width: 230px;
   color: #fff;
   text-decoration: none;
-}
-
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  display: grid;
-  place-items: center;
-  position: relative;
-  font-size: 15px;
-  font-weight: 900;
-  letter-spacing: -.08em;
-  font-style: italic;
-}
-
-.brand-mark:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 2px;
-  bottom: 1px;
-  height: 3px;
-  background: var(--brand-lime);
-  border-radius: 99px;
-}
-
-.brand-mark span:last-child {
-  margin-left: -4px;
-  margin-top: 6px;
-}
-
-.brand-copy {
-  display: grid;
-  gap: 3px;
-}
-
-.brand-copy strong {
-  font-size: 14px;
   line-height: 1;
 }
 
-.brand-copy small {
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  color: rgba(255,255,255,.48);
+.brand-wordmark {
+  position: relative;
+  width: max-content;
+  min-width: 230px;
+  padding: 3px 0 5px;
+}
+
+.brand-name {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  white-space: nowrap;
+  font-family: 'Archivo Black', 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -.065em;
+  line-height: 1;
+}
+
+.brand-name span:last-child {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -.045em;
+  color: rgba(255,255,255,.76);
+}
+
+.brand-underline {
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-top: 4px;
+  border-radius: 99px;
+  background: #ef4b25;
+  transition: width .25s ease;
+}
+
+.brand-wordmark:hover .brand-underline {
+  width: 58px;
 }
 
 .nav-links {
@@ -460,13 +459,18 @@ details p {
     border-radius: 19px;
   }
 
-  .brand-copy small {
-    display: none;
-  }
-
-  .brand {
+  .brand-wordmark {
     min-width: 0;
     flex: 1;
+  }
+
+  .brand-name {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .brand-name span:last-child {
+    font-size: 13px;
   }
 
   .nav-links,.nav-cta {
