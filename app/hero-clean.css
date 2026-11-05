@@ -2570,3 +2570,39 @@ details p {
     line-height: 1.6;
   }
 }
+
+
+/* Services cards — lighter image treatment and vertically centred content */
+.services-section .service-card::before {
+  opacity: .48;
+}
+.services-section .service-card::after {
+  background: linear-gradient(115deg, rgba(17,16,15,.78) 0%, rgba(17,16,15,.62) 52%, rgba(17,16,15,.48) 100%);
+}
+.services-section .service-card:hover::before {
+  opacity: .58;
+}
+.services-section .service-card:hover::after {
+  background: linear-gradient(115deg, rgba(17,16,15,.72) 0%, rgba(17,16,15,.55) 55%, rgba(17,16,15,.42) 100%);
+}
+.services-section .service-card {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.services-section .service-card .card-number {
+  align-self: center;
+  margin-bottom: 28px;
+}
+.services-section .service-card h3 {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto 14px;
+  text-align: center;
+}
+.services-section .service-card p {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
