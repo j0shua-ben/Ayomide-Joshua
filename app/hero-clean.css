@@ -2657,3 +2657,45 @@ details p {
     font-size: clamp(38px, 9.8vw, 56px);
   }
 }
+
+
+/* Selected Work headline — mirror the hero's bold, oversized type system */
+.work-section-head .work-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 8px 0 0;
+  font-family: "Archivo Black", "Manrope", sans-serif;
+  font-size: clamp(50px, 5.6vw, 76px);
+  font-weight: 900;
+  line-height: .98;
+  letter-spacing: -.065em;
+  text-transform: uppercase;
+}
+
+.work-section-head .work-headline span:first-child {
+  color: #171614;
+}
+
+.work-section-head .work-headline span:last-child {
+  color: #ef4b25;
+}
+
+/* First project title uses the same compact heading scale as the service cards */
+.work-project:first-child .work-project-copy h3 {
+  font-size: clamp(25px, 2.45vw, 34px);
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+@media (max-width: 700px) {
+  .work-section-head .work-headline {
+    font-size: clamp(38px, 9.8vw, 56px);
+  }
+
+  .work-project:first-child .work-project-copy h3 {
+    font-size: clamp(25px, 7vw, 34px);
+  }
+}
