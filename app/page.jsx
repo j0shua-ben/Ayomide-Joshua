@@ -127,11 +127,9 @@ export default function Home() {
         <section className="section work-section" id="work">
           <div className="container">
             <div className="section-head work-section-head">
-              <div>
-                <div className="kicker">04 / SELECTED WORK</div>
-                <h2 className="work-headline"><span>Real stores.</span><span>Thoughtful improvements.</span></h2>
-              </div>
-              <p className="muted">A look at two Shopify projects where I contributed to the storefront experience, conversion improvements and customer acquisition.</p>
+              <div className="kicker">04 / SELECTED WORK</div>
+              <h2 className="work-headline"><span>Real stores.</span><span>Real impact.</span></h2>
+              <p className="muted">A closer look at Shopify stores I’ve helped improve through thoughtful redesign, conversion-focused changes and customer acquisition.</p>
             </div>
             <div className="work-list">
               {cases.map((item) => (
@@ -147,8 +145,7 @@ export default function Home() {
                     <div className="work-project-meta"><span>{item.number}</span><span>{item.tag}</span></div>
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
-                    <div className="work-project-services">{item.services.map((service) => <span key={service}>{service}</span>)}</div>
-                    <a className="work-project-link" href={item.url} target="_blank" rel="noreferrer">Explore the live store <span>↗</span></a>
+                    <div className="work-project-services"><span className="work-services-label">MY CONTRIBUTION</span>{item.services.map((service) => <span key={service}>{service}</span>)}</div>
                   </div>
                 </article>
               ))}
