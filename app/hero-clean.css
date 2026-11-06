@@ -2810,3 +2810,18 @@ details p {
     width: 100%;
   }
 }
+
+
+/* Keep both selected-work project titles on the same service-card heading scale */
+.work-project-copy h3 {
+  font-size: clamp(25px, 2.45vw, 34px);
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+@media (max-width: 700px) {
+  .work-project-copy h3 {
+    font-size: clamp(25px, 7vw, 34px);
+  }
+}
