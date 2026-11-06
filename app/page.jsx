@@ -129,7 +129,7 @@ export default function Home() {
             <div className="section-head work-section-head">
               <div>
                 <div className="kicker">04 / SELECTED WORK</div>
-                <h2>Real stores. Thoughtful improvements.</h2>
+                <h2 className="work-headline"><span>Real stores.</span><span>Thoughtful improvements.</span></h2>
               </div>
               <p className="muted">A look at two Shopify projects where I contributed to the storefront experience, conversion improvements and customer acquisition.</p>
             </div>
