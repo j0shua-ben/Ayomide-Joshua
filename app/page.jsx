@@ -36,7 +36,7 @@ const cases = [
     tag: 'PREMIUM FOOD & BEVERAGE',
     title: "Expedition Nomad's Haven",
     text: 'A premium storefront experience for a Belgian hot chocolate brand. My contribution included Shopify redesign, conversion-focused improvements and Google Ads setup and campaign management.',
-    image: '/images/nomads-haven-banner.jpg',
+    image: '/images/pp.PNG',
     imageAlt: "Expedition Nomad's Haven Belgian milk chocolate flakes and hot chocolate",
     url: 'https://expeditionnomadshaven.co.uk/',
     services: ['Shopify Redesign', 'CRO', 'Google Ads'],
