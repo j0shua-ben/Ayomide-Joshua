@@ -85,31 +85,44 @@ export default function Home() {
                 <div className="growth-store-window">
                   <div className="growth-window-bar"><span /><span /><span /><b>atelierandco.com</b></div>
                   <div className="growth-store-content">
-                    <div className="growth-store-announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $75</div>
-                    <div className="growth-store-nav">
-                      <strong>ATELIER<span>&amp;</span>CO.</strong>
-                      <span>NEW ARRIVALS&nbsp;&nbsp; SKINCARE&nbsp;&nbsp; OUR STORY</span>
-                      <i>SEARCH&nbsp;&nbsp; BAG (0)</i>
-                    </div>
-                    <div className="growth-store-hero">
-                      <div className="growth-store-copy">
-                        <small>THE EVERYDAY EDIT · NO. 04</small>
-                        <strong>Good skin.<br/>Good days.</strong>
-                        <p>Thoughtful essentials for your daily ritual.</p>
-                        <em>SHOP THE COLLECTION <b>↗</b></em>
+                    <div className="growth-store-page-track">
+                      <div className="growth-store-announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $75</div>
+                      <div className="growth-store-nav">
+                        <strong>ATELIER<span>&amp;</span>CO.</strong>
+                        <span>NEW ARRIVALS&nbsp;&nbsp; SKINCARE&nbsp;&nbsp; OUR STORY</span>
+                        <i>SEARCH&nbsp;&nbsp; BAG (0)</i>
                       </div>
-                      <div className="growth-product-art" aria-label="Premium skincare serum product display">
-                        <span className="growth-product-sun" />
-                        <div className="growth-product-cap" />
-                        <div className="growth-product-bottle"><span className="growth-bottle-highlight" /><span className="growth-bottle-brand">ATELIER</span><span className="growth-bottle-name">DAILY<br/>SERUM</span><span className="growth-bottle-detail">30 ML / 1.0 FL.OZ</span></div>
-                        <span className="growth-product-shadow" />
+                      <div className="growth-store-hero">
+                        <div className="growth-store-copy">
+                          <small>THE EVERYDAY EDIT · NO. 04</small>
+                          <strong>Good skin.<br/>Good days.</strong>
+                          <p>Thoughtful essentials for your daily ritual.</p>
+                          <em>SHOP THE COLLECTION <b>↗</b></em>
+                        </div>
+                        <div className="growth-product-art" aria-label="Premium skincare serum product display">
+                          <span className="growth-product-sun" />
+                          <div className="growth-product-cap" />
+                          <div className="growth-product-bottle"><span className="growth-bottle-highlight" /><span className="growth-bottle-brand">ATELIER</span><span className="growth-bottle-name">DAILY<br/>SERUM</span><span className="growth-bottle-detail">30 ML / 1.0 FL.OZ</span></div>
+                          <span className="growth-product-shadow" />
+                        </div>
                       </div>
-                    </div>
-                    <div className="growth-store-collection-head"><span>BESTSELLERS</span><span>SHOP ALL&nbsp; ↗</span></div>
-                    <div className="growth-store-products">
-                      <div><span className="growth-mini-product growth-mini-one" /><b>Daily Hydration Serum</b><small>$34.00</small></div>
-                      <div><span className="growth-mini-product growth-mini-two" /><b>Soft Cleanse Wash</b><small>$28.00</small></div>
-                      <div><span className="growth-mini-product growth-mini-three" /><b>Restore Face Cream</b><small>$42.00</small></div>
+                      <div className="growth-store-collection-head"><span>SHOP THE EDIT — CUSTOMER FAVOURITES</span><span>VIEW ALL&nbsp; ↗</span></div>
+                      <div className="growth-store-products">
+                        <div><span className="growth-mini-product growth-mini-one" /><b>Daily Hydration Serum</b><small>$34.00</small></div>
+                        <div><span className="growth-mini-product growth-mini-two" /><b>Soft Cleanse Wash</b><small>$28.00</small></div>
+                        <div><span className="growth-mini-product growth-mini-three" /><b>Restore Face Cream</b><small>$42.00</small></div>
+                      </div>
+                      <div className="growth-store-benefits">
+                        <div><b>01</b><span>Thoughtful ingredients</span></div>
+                        <div><b>02</b><span>Made for daily rituals</span></div>
+                        <div><b>03</b><span>Delivered with care</span></div>
+                      </div>
+                      <div className="growth-store-review">
+                        <span>★★★★★</span>
+                        <strong>“A little luxury in my everyday routine.”</strong>
+                        <small>— VERIFIED CUSTOMER</small>
+                      </div>
+                      <div className="growth-store-footer"><b>ATELIER&amp;CO.</b><span>SKINCARE, MADE CONSIDERED.</span><i>INSTAGRAM&nbsp; · &nbsp;CONTACT</i></div>
                     </div>
                   </div>
                 </div>
@@ -119,6 +132,9 @@ export default function Home() {
                   <div className="growth-mobile-copy"><small>THE EVERYDAY EDIT</small><strong>Good skin.<br/>Good days.</strong><p>Thoughtful essentials for your daily ritual.</p><b>SHOP NOW&nbsp; ↗</b></div>
                   <div className="growth-mobile-art"><div className="growth-mobile-product"><span className="growth-mobile-cap" /><span className="growth-mobile-bottle"><b>ATELIER</b><i>DAILY<br/>SERUM</i></span></div></div>
                   <div className="growth-mobile-product-meta"><b>Daily Hydration Serum</b><span>$34.00</span></div>
+                  <div className="growth-mobile-bestsellers"><span>THE BESTSELLERS</span><b>Explore the daily edit ↗</b></div>
+                  <div className="growth-mobile-product-row"><i /><span><b>Soft Cleanse Wash</b><small>$28.00</small></span></div>
+                  <div className="growth-mobile-trust">★★★★★ &nbsp; LOVED FOR EVERYDAY SKIN</div>
                 </div>
                 <div className="growth-ads-card">
                   <div className="growth-ads-head"><span className="growth-google-mark">G</span><b>CAMPAIGN OVERVIEW</b><i>↗</i></div>
