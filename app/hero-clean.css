@@ -3531,3 +3531,19 @@ details p {
 @media (max-width: 420px) {
   .services-section-head h2 { font-size: clamp(32px, 9.5vw, 42px) !important; }
 }
+
+
+/* Refined services headline scale — preserve weight and editorial character */
+.services-section-head h2 {
+  font-size: clamp(38px, 4.65vw, 64px) !important;
+}
+@media (max-width: 760px) {
+  .services-section-head h2 {
+    font-size: clamp(32px, 7.8vw, 46px) !important;
+  }
+}
+@media (max-width: 420px) {
+  .services-section-head h2 {
+    font-size: clamp(30px, 8.4vw, 38px) !important;
+  }
+}
