@@ -4131,3 +4131,361 @@ main .growth-copy h2 {
 @media (prefers-reduced-motion: reduce) {
   .growth-store-page-track { animation: none !important; transform: none !important; }
 }
+
+
+/* Tower 28 reference storefront — genuine brand imagery and product details */
+.growth-tower-store {
+  height: 294px !important;
+  overflow: hidden !important;
+  background: #fff !important;
+}
+.growth-tower-store .growth-store-content {
+  height: calc(294px - 25px) !important;
+  padding: 0 12px !important;
+  overflow: hidden !important;
+  background: #fff !important;
+}
+.tower-store-track {
+  width: 100%;
+  will-change: transform;
+  animation: tower-store-scroll 18s cubic-bezier(.42,0,.58,1) infinite;
+}
+.growth-tower-store:hover .tower-store-track { animation-play-state: paused; }
+@keyframes tower-store-scroll {
+  0%, 8% { transform: translateY(0); }
+  43%, 58% { transform: translateY(-34%); }
+  92%, 100% { transform: translateY(0); }
+}
+.tower-store-announcement {
+  padding: 6px 4px;
+  background: #f45b35;
+  color: #fff;
+  text-align: center;
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+.tower-store-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 39px;
+  gap: 8px;
+  border-bottom: 1px solid #eeeae5;
+  color: #24211f;
+}
+.tower-store-brand {
+  color: #f15a37;
+  font-size: 15px;
+  font-weight: 1000;
+  letter-spacing: -.1em;
+  white-space: nowrap;
+}
+.tower-store-brand b {
+  display: inline-grid;
+  place-items: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 2px;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  font-size: 8px;
+  letter-spacing: -.05em;
+}
+.tower-store-header nav {
+  color: #37332f;
+  font-size: 5px;
+  font-weight: 850;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+.tower-store-tools {
+  color: #4b4540;
+  font-size: 6px;
+  white-space: nowrap;
+}
+.tower-store-hero {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: center;
+  min-height: 172px;
+  margin: 0;
+  padding: 10px 14px;
+  overflow: hidden;
+  background: #fff0e9;
+}
+.tower-store-hero-copy { position: relative; z-index: 1; }
+.tower-store-hero-copy > span,
+.tower-store-story small {
+  color: #f15a37;
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+.tower-store-hero-copy h3 {
+  margin: 8px 0 6px;
+  color: #24211f;
+  font-family: Georgia,serif;
+  font-size: clamp(22px,2.5vw,34px);
+  font-weight: 500;
+  line-height: .95;
+  letter-spacing: -.05em;
+}
+.tower-store-hero-copy p {
+  max-width: 150px;
+  margin: 0 0 9px;
+  color: #6c625b;
+  font-size: 6px;
+  line-height: 1.5;
+}
+.tower-store-hero-copy > b {
+  color: #25211e;
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.tower-store-hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  min-width: 0;
+}
+.tower-store-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.tower-store-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 11px 2px 7px;
+  color: #26221f;
+}
+.tower-store-section-heading div { display: flex; flex-direction: column; gap: 3px; }
+.tower-store-section-heading small {
+  color: #f15a37;
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: .13em;
+}
+.tower-store-section-heading strong {
+  font-family: Georgia,serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tower-store-section-heading > span {
+  color: #f15a37;
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.tower-store-products {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 8px;
+}
+.tower-store-products article {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+  color: #292521;
+}
+.tower-store-product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  overflow: hidden;
+  background: #f7f3ef;
+}
+.tower-store-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tower-store-product-image.tower-set img { width: 115%; height: 115%; }
+.tower-store-products article > b {
+  overflow: hidden;
+  font-size: 5px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tower-store-products article > span {
+  color: #f15a37;
+  font-size: 5px;
+  font-weight: 900;
+}
+.tower-store-products s { margin-left: 3px; color: #8e857e; font-weight: 500; }
+.tower-store-values {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  margin-top: 11px;
+  padding: 9px 2px;
+  border-top: 1px solid #eee8e2;
+  border-bottom: 1px solid #eee8e2;
+  color: #5b5149;
+  font-size: 4px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+.tower-store-values i { color: #f15a37; font-style: normal; }
+.tower-store-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 17px 8px;
+  background: #fff0e9;
+  text-align: center;
+}
+.tower-store-story strong {
+  color: #28231f;
+  font-family: Georgia,serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+.tower-store-story > span {
+  color: #f15a37;
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.tower-mobile-window {
+  /* Keep the original phone mockup footprint and proportions */
+  width: 27% !important;
+  min-width: 116px !important;
+  top: 190px !important;
+  right: 1% !important;
+  padding: 8px !important;
+  border: 4px solid #24211e !important;
+  border-radius: 21px !important;
+  background: #fff !important;
+  overflow: hidden !important;
+}
+.tower-mobile-window .growth-mobile-top {
+  height: 19px;
+  color: #292521;
+}
+.tower-mobile-window .growth-mobile-top b {
+  color: #f15a37;
+  font-family: Arial,sans-serif;
+  font-size: 9px;
+  font-weight: 1000;
+  letter-spacing: -.08em;
+}
+.tower-mobile-window .growth-mobile-top b em {
+  display: inline-grid;
+  place-items: center;
+  width: 11px;
+  height: 11px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 6px;
+  font-style: normal;
+}
+.tower-mobile-announcement {
+  margin: 0 -8px;
+  padding: 5px 2px;
+  background: #f15a37;
+  color: #fff;
+  text-align: center;
+  font-size: 4px;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+.tower-mobile-hero {
+  padding: 10px 5px 5px;
+  background: #fff0e9;
+  color: #28231f;
+}
+.tower-mobile-hero small {
+  color: #f15a37;
+  font-size: 4px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.tower-mobile-hero strong {
+  display: block;
+  margin-top: 5px;
+  font-family: Georgia,serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: .96;
+}
+.tower-mobile-hero p {
+  margin: 5px 0;
+  color: #756a62;
+  font-size: 5px;
+  line-height: 1.3;
+}
+.tower-mobile-hero > b {
+  color: #f15a37;
+  font-size: 4px;
+  font-weight: 900;
+}
+.tower-mobile-hero img {
+  display: block;
+  width: 100%;
+  height: 72px;
+  margin-top: 5px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.tower-mobile-product {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px 4px 4px;
+  color: #28231f;
+}
+.tower-mobile-product small {
+  color: #f15a37;
+  font-size: 4px;
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+.tower-mobile-product strong { font-size: 6px; }
+.tower-mobile-product img {
+  display: block;
+  width: 100%;
+  height: 65px;
+  object-fit: contain;
+  background: #f7f3ef;
+}
+.tower-mobile-product > span { color: #f15a37; font-size: 5px; font-weight: 900; }
+@media (max-width: 760px) {
+  .growth-tower-store {
+    height: auto !important;
+    max-height: none !important;
+  }
+  .growth-tower-store .growth-store-content {
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 10px 10px !important;
+  }
+  .tower-store-track {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto;
+  }
+  .tower-mobile-window {
+    width: 27% !important;
+    min-width: 116px !important;
+    top: 190px !important;
+    right: 1% !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tower-store-track { animation: none !important; transform: none !important; }
+}
