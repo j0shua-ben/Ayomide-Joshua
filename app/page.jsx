@@ -193,19 +193,19 @@ export default function Home() {
         </section>
 
 
-        <section className="visual-break" aria-label="Store growth statement">
-          <div className="visual-break-image" aria-hidden="true">
-            <img src={cases[0].image} alt="" loading="lazy"/>
+        <section className="visual-break" aria-label="People behind better ecommerce">
+          <div className="visual-break-image">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1500&q=85" alt="A team collaborating around a table in a bright creative office" loading="lazy"/>
             <div className="visual-break-shape visual-break-shape-one"></div>
             <div className="visual-break-shape visual-break-shape-two"></div>
-            <div className="visual-break-float visual-break-float-one"><span>01</span><b>Better product pages</b></div>
-            <div className="visual-break-float visual-break-float-two"><span>02</span><b>Smoother customer journeys</b></div>
+            <div className="visual-break-float visual-break-float-one"><span>01</span><b>People-first thinking</b></div>
+            <div className="visual-break-float visual-break-float-two"><span>02</span><b>Work that solves real needs</b></div>
           </div>
           <div className="visual-break-copy">
-            <p className="visual-kicker">DESIGN WITH A JOB TO DO</p>
-            <h2>Make every part of the store <em>earn its place.</em></h2>
-            <p>From the first impression to the final click, I bring design, usability and store performance into the same conversation.</p>
-            <a className="visual-link" href="#contact">Let's improve your store <span>↗</span></a>
+            <p className="visual-kicker">GOOD WORK STARTS WITH PEOPLE</p>
+            <h2>Behind every great online experience, <em>there are real people.</em></h2>
+            <p>I bring the same care to the people running a business as I do to the customers browsing and buying from it.</p>
+            <a className="visual-link" href="#contact">Let's talk about your business <span>↗</span></a>
           </div>
         </section>
 
@@ -253,14 +253,14 @@ export default function Home() {
         </section>
 
 
-        <section className="image-ribbon" aria-label="Ecommerce services">
-          <div className="image-ribbon-photo"><img src={cases[1].image} alt="Expedition Nomad's Haven Shopify project" loading="lazy"/></div>
+        <section className="image-ribbon" aria-label="Real people shopping online">
+          <div className="image-ribbon-photo"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1100&q=85" alt="Customer completing an online purchase with a card" loading="lazy"/></div>
           <div className="image-ribbon-content">
-            <span>THOUGHTFUL ECOMMERCE. PRACTICAL EXECUTION.</span>
-            <h2>Good stores don't happen by accident.</h2>
-            <a href="#work">Explore the projects <b>↗</b></a>
+            <span>FROM THE FIRST CLICK TO THE FINAL CHECKOUT</span>
+            <h2>Make buying feel simple. Make customers feel confident.</h2>
+            <a href="#services">See how I can help <b>↗</b></a>
           </div>
-          <div className="image-ribbon-photo image-ribbon-photo-last"><img src={cases[2].image} alt="Saint Phillip Street Gourmet Coffee Shopify project" loading="lazy"/></div>
+          <div className="image-ribbon-photo image-ribbon-photo-last"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85" alt="Colleagues working together on a project in an office" loading="lazy"/></div>
         </section>
 
         <section className="section faq-section" id="faq">
@@ -292,12 +292,15 @@ export default function Home() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <div className="footer-main">
-            <a className="footer-wordmark" href="#top"><span>AYOMIDE</span><span>JOSHUA</span></a>
-            <p>Shopify management, conversion optimization and thoughtful ecommerce growth.</p>
-            <div className="footer-links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
-            <a className="footer-top" href="#top">Back to top ↑</a>
+            <div className="footer-identity">
+              <a className="footer-wordmark" href="#top"><span>AYOMIDE</span><span>JOSHUA</span></a>
+              <p>Shopify management, conversion optimization and thoughtful ecommerce growth.</p>
+            </div>
+            <div className="footer-column"><strong>Explore</strong><div className="footer-links"><a href="#top">Home</a><a href="#work">Selected work</a><a href="#services">Services</a><a href="#process">Process</a></div></div>
+            <div className="footer-column"><strong>More</strong><div className="footer-links"><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#faq">FAQs</a><a href="#contact">Contact</a></div></div>
+            <div className="footer-connect"><strong>Have a project in mind?</strong><a href="mailto:joshuaben023@gmail.com">Let's talk ↗</a><a className="footer-top" href="#top">Back to top ↑</a></div>
           </div>
-          <div className="footer-bottom"><span>© {new Date().getFullYear()} Ayomide Joshua. All rights reserved.</span><a href="mailto:joshuaben023@gmail.com">joshuaben023@gmail.com</a></div>
+          <div className="footer-bottom"><span>© {new Date().getFullYear()} Ayomide Joshua. All rights reserved.</span><span>Shopify · Ecommerce · CRO</span><a href="mailto:joshuaben023@gmail.com">joshuaben023@gmail.com</a></div>
         </div>
       </footer>
     </>
