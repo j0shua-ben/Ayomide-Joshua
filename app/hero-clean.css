@@ -4718,3 +4718,31 @@ main .expertise-item > span,
 main .kicker {
   display: none !important;
 }
+
+
+/* Final layout correction: identical 32px section-to-section rhythm.
+   Each section contributes 16px on each side, avoiding doubled gaps. */
+main > .section,
+main > .growth-section {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  margin-top: 0 !important;
+}
+main > .section + .section {
+  margin-top: 0 !important;
+}
+main .section-head {
+  margin-bottom: 24px !important;
+}
+main .growth-pillars {
+  margin-top: 30px !important;
+}
+@media (max-width: 760px) {
+  main > .section,
+  main > .growth-section {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  main .section-head { margin-bottom: 18px !important; }
+  main .growth-pillars { margin-top: 22px !important; }
+}
