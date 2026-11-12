@@ -322,3 +322,24 @@
 @media (max-width: 480px) {
   .title { font-size: clamp(32px, 8.2vw, 39px) !important; line-height: 1.02 !important; }
 }
+
+
+/* Compact the hero's vertical footprint so the next section follows naturally */
+.hero {
+  min-height: min(740px, 88svh) !important;
+  padding-top: clamp(78px, 8vh, 98px) !important;
+}
+.inner {
+  min-height: 540px !important;
+}
+.portraitStage {
+  min-height: 540px !important;
+}
+@media (max-width: 1050px) {
+  .hero { min-height: min(700px, 86svh) !important; }
+  .inner, .portraitStage { min-height: 500px !important; }
+}
+@media (max-width: 760px) {
+  .hero { min-height: auto !important; padding-top: 88px !important; }
+  .inner, .portraitStage { min-height: 0 !important; }
+}
