@@ -4746,3 +4746,65 @@ main .growth-pillars {
   main .section-head { margin-bottom: 18px !important; }
   main .growth-pillars { margin-top: 22px !important; }
 }
+
+
+/* One spacing scale for every main section and every selected-work project.
+   Adjacent sections share 44px bottom + 44px top = 88px of breathing room. */
+:root {
+  --portfolio-section-half-gap: 44px;
+  --portfolio-content-gap: 32px;
+  --portfolio-project-gap: 72px;
+}
+main > section.section,
+main > section.growth-section,
+main > section.services-section,
+main > section.work-section,
+main > section.section-process,
+main > section.section-dark {
+  margin-block: 0 !important;
+  padding-block: var(--portfolio-section-half-gap) !important;
+}
+main > section.section + section.section,
+main > section.growth-section + section.section,
+main > section.section + section.growth-section {
+  margin-top: 0 !important;
+}
+main > section.section .section-head,
+main > section.section .growth-intro {
+  margin-bottom: var(--portfolio-content-gap) !important;
+}
+main .growth-pillars {
+  margin-top: var(--portfolio-content-gap) !important;
+}
+main .work-section .work-section-head {
+  margin-bottom: var(--portfolio-content-gap) !important;
+}
+main .work-section .work-list {
+  display: grid !important;
+  gap: var(--portfolio-project-gap) !important;
+}
+main .work-section .work-project {
+  margin: 0 !important;
+  padding-block: 32px 40px !important;
+}
+main .work-section .work-project + .work-project {
+  margin-top: 0 !important;
+}
+@media (max-width: 760px) {
+  :root {
+    --portfolio-section-half-gap: 32px;
+    --portfolio-content-gap: 24px;
+    --portfolio-project-gap: 52px;
+  }
+  main > section.section,
+  main > section.growth-section,
+  main > section.services-section,
+  main > section.work-section,
+  main > section.section-process,
+  main > section.section-dark {
+    padding-block: var(--portfolio-section-half-gap) !important;
+  }
+  main .work-section .work-project {
+    padding-block: 24px 28px !important;
+  }
+}
