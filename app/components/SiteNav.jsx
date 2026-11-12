@@ -3,11 +3,10 @@
 import { useEffect, useState } from 'react'
 
 const navItems = [
-  ['Work', '#work'],
-  ['Storefront', '#storefront'],
   ['Services', '#services'],
+  ['Process', '#process'],
+  ['Work', '#work'],
   ['About', '#about'],
-  ['Contact', '#contact'],
 ]
 
 export default function SiteNav() {
