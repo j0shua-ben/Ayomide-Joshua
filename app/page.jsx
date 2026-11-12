@@ -82,59 +82,54 @@ export default function Home() {
                 <div className="growth-orbit growth-orbit-one" />
                 <div className="growth-orbit growth-orbit-two" />
                 <div className="growth-visual-label">THE BIGGER PICTURE <span>01 — 03</span></div>
-                <div className="growth-store-window">
-                  <div className="growth-window-bar"><span /><span /><span /><b>atelierandco.com</b></div>
+                <div className="growth-store-window growth-tower-store">
+                  <div className="growth-window-bar"><span /><span /><span /><b>tower28beauty.com</b></div>
                   <div className="growth-store-content">
-                    <div className="growth-store-page-track">
-                      <div className="growth-store-announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $75</div>
-                      <div className="growth-store-nav">
-                        <strong>ATELIER<span>&amp;</span>CO.</strong>
-                        <span>NEW ARRIVALS&nbsp;&nbsp; SKINCARE&nbsp;&nbsp; OUR STORY</span>
-                        <i>SEARCH&nbsp;&nbsp; BAG (0)</i>
-                      </div>
-                      <div className="growth-store-hero">
-                        <div className="growth-store-copy">
-                          <small>THE EVERYDAY EDIT · NO. 04</small>
-                          <strong>Good skin.<br/>Good days.</strong>
-                          <p>Thoughtful essentials for your daily ritual.</p>
-                          <em>SHOP THE COLLECTION <b>↗</b></em>
+                    <div className="tower-store-track">
+                      <div className="tower-store-announcement">FREE MINI POUCH ON YOUR FIRST ORDER&nbsp; ✦ &nbsp; FREE U.S. SHIPPING ON $30+</div>
+                      <header className="tower-store-header">
+                        <div className="tower-store-brand">TOWER <b>28</b></div>
+                        <nav>SHOP&nbsp;&nbsp; SKINCARE&nbsp;&nbsp; MAKEUP&nbsp;&nbsp; ABOUT</nav>
+                        <div className="tower-store-tools">⌕ &nbsp; ♡ &nbsp; BAG (0)</div>
+                      </header>
+                      <div className="tower-store-hero">
+                        <div className="tower-store-hero-copy">
+                          <span>GOOD SKIN. GOOD MOOD.</span>
+                          <h3>Meet your skin's<br/>new SOS.</h3>
+                          <p>High-performance skincare and makeup made for sensitive skin.</p>
+                          <b>SHOP BESTSELLERS&nbsp; ↗</b>
                         </div>
-                        <div className="growth-product-art" aria-label="Premium skincare serum product display">
-                          <span className="growth-product-sun" />
-                          <div className="growth-product-cap" />
-                          <div className="growth-product-bottle"><span className="growth-bottle-highlight" /><span className="growth-bottle-brand">ATELIER</span><span className="growth-bottle-name">DAILY<br/>SERUM</span><span className="growth-bottle-detail">30 ML / 1.0 FL.OZ</span></div>
-                          <span className="growth-product-shadow" />
+                        <div className="tower-store-hero-image">
+                          <img src="https://www.tower28beauty.com/cdn/shop/files/01-SOS_STARTER_SET_PACKSHOT-US.png?v=1793216468&width=1000" alt="Tower 28 SOS Stressed Skin Starter Set" />
                         </div>
                       </div>
-                      <div className="growth-store-collection-head"><span>SHOP THE EDIT — CUSTOMER FAVOURITES</span><span>VIEW ALL&nbsp; ↗</span></div>
-                      <div className="growth-store-products">
-                        <div><span className="growth-mini-product growth-mini-one" /><b>Daily Hydration Serum</b><small>$34.00</small></div>
-                        <div><span className="growth-mini-product growth-mini-two" /><b>Soft Cleanse Wash</b><small>$28.00</small></div>
-                        <div><span className="growth-mini-product growth-mini-three" /><b>Restore Face Cream</b><small>$42.00</small></div>
+                      <div className="tower-store-section-heading"><div><small>THE GOOD STUFF</small><strong>Shop bestsellers</strong></div><span>SHOP ALL&nbsp; ↗</span></div>
+                      <div className="tower-store-products">
+                        <article><div className="tower-store-product-image tower-set"><img src="https://www.tower28beauty.com/cdn/shop/files/01-SOS_STARTER_SET_PACKSHOT-US.png?v=1793216468&width=700" alt="SOS Stressed Skin Mini Starter Gift Set"/></div><b>SOS Stressed Skin Mini Starter Gift Set</b><span>$28.00 <s>$38.00</s></span></article>
+                        <article><div className="tower-store-product-image"><img src="https://www.tower28beauty.com/cdn/shop/files/SOS_20Spray_20_E2_80_94_C2_A01_20oz.webp?v=1774574385&width=700" alt="Tower 28 SOS Rescue Spray"/></div><b>SOS Rescue Spray</b><span>$28.00</span></article>
+                        <article><div className="tower-store-product-image tower-set"><img src="https://www.tower28beauty.com/cdn/shop/files/01-SOS_STARTER_SET_PACKSHOT-US.png?v=1793216468&width=700" alt="Tower 28 skincare collection"/></div><b>Everyday SOS essentials</b><span>SHOP THE SET&nbsp; ↗</span></article>
                       </div>
-                      <div className="growth-store-benefits">
-                        <div><b>01</b><span>Thoughtful ingredients</span></div>
-                        <div><b>02</b><span>Made for daily rituals</span></div>
-                        <div><b>03</b><span>Delivered with care</span></div>
-                      </div>
-                      <div className="growth-store-review">
-                        <span>★★★★★</span>
-                        <strong>“A little luxury in my everyday routine.”</strong>
-                        <small>— VERIFIED CUSTOMER</small>
-                      </div>
-                      <div className="growth-store-footer"><b>ATELIER&amp;CO.</b><span>SKINCARE, MADE CONSIDERED.</span><i>INSTAGRAM&nbsp; · &nbsp;CONTACT</i></div>
+                      <div className="tower-store-values"><span>MADE FOR SENSITIVE SKIN</span><i>✦</i><span>DERM-APPROVED FORMULAS</span><i>✦</i><span>BORN IN LOS ANGELES</span></div>
+                      <div className="tower-store-story"><small>GOOD SKIN IS FOR EVERYONE</small><strong>High-performance beauty.<br/>Made for real life.</strong><span>Explore the Tower 28 routine&nbsp; ↗</span></div>
                     </div>
                   </div>
                 </div>
-                <div className="growth-mobile-window">
-                  <div className="growth-mobile-top"><span>☰</span><b>ATELIER<span>&amp;</span>CO.</b><span>♧</span></div>
-                  <div className="growth-mobile-announcement">COMPLIMENTARY SHIPPING OVER $75</div>
-                  <div className="growth-mobile-copy"><small>THE EVERYDAY EDIT</small><strong>Good skin.<br/>Good days.</strong><p>Thoughtful essentials for your daily ritual.</p><b>SHOP NOW&nbsp; ↗</b></div>
-                  <div className="growth-mobile-art"><div className="growth-mobile-product"><span className="growth-mobile-cap" /><span className="growth-mobile-bottle"><b>ATELIER</b><i>DAILY<br/>SERUM</i></span></div></div>
-                  <div className="growth-mobile-product-meta"><b>Daily Hydration Serum</b><span>$34.00</span></div>
-                  <div className="growth-mobile-bestsellers"><span>THE BESTSELLERS</span><b>Explore the daily edit ↗</b></div>
-                  <div className="growth-mobile-product-row"><i /><span><b>Soft Cleanse Wash</b><small>$28.00</small></span></div>
-                  <div className="growth-mobile-trust">★★★★★ &nbsp; LOVED FOR EVERYDAY SKIN</div>
+                <div className="growth-mobile-window tower-mobile-window">
+                  <div className="growth-mobile-top"><span>☰</span><b>TOWER <em>28</em></b><span>♡</span></div>
+                  <div className="tower-mobile-announcement">FREE MINI POUCH ON YOUR FIRST ORDER</div>
+                  <div className="tower-mobile-hero">
+                    <small>GOOD SKIN. GOOD MOOD.</small>
+                    <strong>Meet your<br/>skin's new SOS.</strong>
+                    <p>High-performance beauty for sensitive skin.</p>
+                    <b>SHOP BESTSELLERS&nbsp; ↗</b>
+                    <img src="https://www.tower28beauty.com/cdn/shop/files/01-SOS_STARTER_SET_PACKSHOT-US.png?v=1793216468&width=700" alt="Tower 28 SOS skincare starter set"/>
+                  </div>
+                  <div className="tower-mobile-product">
+                    <small>THE GOOD STUFF</small>
+                    <strong>SOS Rescue Spray</strong>
+                    <img src="https://www.tower28beauty.com/cdn/shop/files/SOS_20Spray_20_E2_80_94_C2_A01_20oz.webp?v=1774574385&width=500" alt="Tower 28 SOS Rescue Spray"/>
+                    <span>$28.00</span>
+                  </div>
                 </div>
                 <div className="growth-ads-card">
                   <div className="growth-ads-head"><span className="growth-google-mark">G</span><b>CAMPAIGN OVERVIEW</b><i>↗</i></div>
