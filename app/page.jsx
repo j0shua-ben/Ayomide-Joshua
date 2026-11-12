@@ -115,20 +115,18 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="growth-mobile-window tower-mobile-window">
-                  <div className="growth-mobile-top"><span>☰</span><b>TOWER <em>28</em></b><span>♡</span></div>
-                  <div className="tower-mobile-announcement">FREE MINI POUCH ON YOUR FIRST ORDER</div>
-                  <div className="tower-mobile-hero">
-                    <small>GOOD SKIN. GOOD MOOD.</small>
-                    <strong>Meet your<br/>skin's new SOS.</strong>
-                    <p>High-performance beauty for sensitive skin.</p>
-                    <b>SHOP BESTSELLERS&nbsp; ↗</b>
-                    <img src="https://www.tower28beauty.com/cdn/shop/files/01-SOS_STARTER_SET_PACKSHOT-US.png?v=1793216468&width=700" alt="Tower 28 SOS skincare starter set"/>
-                  </div>
-                  <div className="tower-mobile-product">
-                    <small>THE GOOD STUFF</small>
-                    <strong>SOS Rescue Spray</strong>
-                    <img src="https://www.tower28beauty.com/cdn/shop/files/SOS_20Spray_20_E2_80_94_C2_A01_20oz.webp?v=1774574385&width=500" alt="Tower 28 SOS Rescue Spray"/>
-                    <span>$28.00</span>
+                  <div className="tower-mobile-product-page">
+                    <div className="tower-mobile-product-header"><span>☰</span><b>TOWER <em>28</em></b><span>♡</span></div>
+                    <div className="tower-mobile-product-image">
+                      <img src="https://www.tower28beauty.com/cdn/shop/files/SOS_20Spray_20_E2_80_94_C2_A01_20oz.webp?v=1774574385&width=600" alt="Tower 28 SOS Rescue Spray product"/>
+                    </div>
+                    <div className="tower-mobile-product-info">
+                      <h3>SOS Rescue Spray</h3>
+                      <p>Daily hypochlorous acid facial spray</p>
+                      <strong>$28.00</strong>
+                      <div className="tower-mobile-product-options"><span>4 fl oz / 120 mL</span><span>★★★★★</span></div>
+                      <div className="tower-mobile-add">ADD TO BAG</div>
+                    </div>
                   </div>
                 </div>
                 <div className="growth-ads-card">
