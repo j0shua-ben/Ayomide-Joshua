@@ -26,7 +26,7 @@ const cases = [
     tag: 'SUSTAINABLE E-COMMERCE',
     title: 'Evaness Biodegradable',
     text: 'A clearer Shopify shopping experience for an everyday essentials brand. My contribution covered storefront redesign, conversion-focused improvements and Google Ads setup and campaign management.',
-    image: 'https://evaness-biodegradable.co.uk/cdn/shop/files/Interim_Main_Image.png?v=1789540905&width=1400',
+    image: 'https://raw.githubusercontent.com/j0shua-ben/Ayomide-Joshua/main/f.png',
     imageAlt: 'Evaness recycled and biodegradable refuse sack packaging',
     url: 'https://evaness-biodegradable.co.uk/',
     services: ['Shopify Redesign', 'CRO', 'Google Ads'],
