@@ -4536,3 +4536,125 @@ main .work-services-label {
     right: 1% !important;
   }
 }
+
+
+/* Compact, legible mobile product-detail preview — preserve phone dimensions */
+.tower-mobile-window {
+  width: 27% !important;
+  min-width: 116px !important;
+  max-width: 190px !important;
+  height: 218px !important;
+  max-height: 218px !important;
+  padding: 7px !important;
+  overflow: hidden !important;
+  background: #fff !important;
+}
+.tower-mobile-product-page {
+  height: 100%;
+  overflow: hidden;
+  color: #25211e;
+  background: #fff;
+}
+.tower-mobile-product-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 21px;
+  padding: 0 2px;
+  color: #292521;
+  font-size: 10px;
+}
+.tower-mobile-product-header b {
+  color: #f15a37;
+  font-family: Arial,sans-serif;
+  font-size: 10px;
+  font-weight: 1000;
+  letter-spacing: -.08em;
+}
+.tower-mobile-product-header em {
+  display: inline-grid;
+  place-items: center;
+  width: 12px;
+  height: 12px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 6px;
+  font-style: normal;
+}
+.tower-mobile-product-image {
+  display: grid;
+  place-items: center;
+  height: 101px;
+  overflow: hidden;
+  background: #f8f2ed;
+}
+.tower-mobile-product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tower-mobile-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 5px 5px;
+}
+.tower-mobile-product-info h3 {
+  margin: 0;
+  color: #25211e;
+  font-family: Georgia,serif;
+  font-size: clamp(11px,1vw,14px);
+  font-weight: 600;
+  line-height: 1.05;
+}
+.tower-mobile-product-info p {
+  margin: 0;
+  color: #6f655d;
+  font-size: 7px;
+  line-height: 1.25;
+}
+.tower-mobile-product-info > strong {
+  color: #25211e;
+  font-size: 9px;
+  font-weight: 800;
+}
+.tower-mobile-product-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  color: #746a62;
+  font-size: 6px;
+}
+.tower-mobile-add {
+  display: grid;
+  place-items: center;
+  min-height: 23px;
+  margin-top: 2px;
+  background: #f15a37;
+  color: white;
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: .06em;
+}
+@media (max-width: 760px) {
+  .tower-mobile-window {
+    width: 27% !important;
+    min-width: 116px !important;
+    max-width: 190px !important;
+    height: 218px !important;
+    max-height: 218px !important;
+  }
+}
+
+/* Remove decorative micro-copy and artificial-looking section identifiers */
+main .kicker,
+main .growth-visual-label,
+main .footer-label,
+main .work-services-label,
+main .card-number,
+main .case-tag,
+main .process-grid article > span,
+main .expertise-item > span {
+  display: none !important;
+}
