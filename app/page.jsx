@@ -55,10 +55,24 @@ const cases = [
 ]
 
 const faqs = [
-  ['What kind of Shopify work do you take on?', 'I work across Shopify management, CRO, storefront design, product and merchandising work, UX improvements and ongoing ecommerce support.'],
-  ['Can you improve an existing Shopify store?', 'Yes. Most projects begin with the existing store, its customer journey and the improvements that will make the biggest practical difference.'],
-  ['Do you manage Google Ads as well?', 'Yes. I support Google Ads setup and campaign management, with attention to the product feed, landing experience and the quality of the store behind the campaign.'],
-  ['How do we get started?', 'Send me your store link and a short description of what you want to improve. I can then suggest a useful starting point.'],
+  ['Do you work remotely with clients?', 'Yes. I work remotely and can collaborate with businesses across different countries and time zones. Store reviews, planning, implementation updates and handovers can all be handled online.'],
+  ['What languages do you work in?', 'I communicate with clients in English through email, messaging and online meetings. Clear communication and agreed project updates are part of the process.'],
+  ['What Shopify services can you help with?', 'I support Shopify store management, storefront design and redesign, product uploads, collections and merchandising, theme customisation, UX improvements, conversion rate optimisation, product SEO and ongoing store support.'],
+  ['Can you improve a Shopify store that is already live?', 'Absolutely. I can review an existing store, identify friction in the shopping journey and prioritise improvements to the homepage, collection pages, product pages, cart and mobile experience. A full rebuild is not always necessary.'],
+  ['Can you design or redesign my Shopify store from scratch?', 'Yes. I can help structure and design a new Shopify storefront around your products, brand, customers and business goals, then prepare the key pages and shopping journey for launch.'],
+  ['Do you offer conversion rate optimisation (CRO)?', 'Yes. CRO work can include a store and customer-journey audit, clearer messaging, stronger product-page content, trust elements, navigation improvements, mobile UX, cart experience and reducing unnecessary checkout friction. Recommendations are based on the store rather than a generic checklist.'],
+  ['Can you manage products, collections and store updates?', 'Yes. This can include product uploads, product descriptions, images, variants, pricing, tags, collection organisation, navigation updates, merchandising and routine quality checks.'],
+  ['Do you work with Shopify themes and apps?', 'Yes. I can work with existing Shopify themes, make suitable theme customisations and help review app requirements or integrations. The exact scope depends on the theme, app and functionality involved.'],
+  ['Can you help with Google Ads and Google Merchant Center?', 'Yes. I can support Google Ads setup and campaign management, as well as product feed and Google Merchant Center troubleshooting. Campaign work should be connected to a sound landing-page and store experience.'],
+  ['Do you also work with platforms other than Shopify?', 'Yes. My wider website design work includes Wix website design and redesign. Shopify remains the main focus of my ecommerce management and CRO services.'],
+  ['How do you work with clients in different time zones?', 'I agree on communication channels, milestones and response expectations at the start. Most project work is asynchronous, with calls arranged by mutual agreement when a live discussion is useful.'],
+  ['How long does a project take?', 'It depends on the size of the store, the number of pages or products involved, the technical requirements and how quickly feedback or access is available. I will agree on a realistic scope and timeline before work begins.'],
+  ['How much do your services cost?', 'Pricing depends on the work required, the condition and size of the store, and whether you need a one-off project or ongoing support. Share your store link and goals so I can recommend a suitable scope and quote.'],
+  ['What do you need from me to get started?', 'Usually, I need your store URL, a short brief about your goals and the main problems you want solved. If we proceed, you can provide the appropriate Shopify collaborator access and any brand assets or references needed for the work.'],
+  ['Is it safe to give you access to my Shopify store?', 'You should invite me through Shopify collaborator access and grant only the permissions needed for the agreed work. You do not need to send your personal password. Access can be reviewed or revoked by the store owner.'],
+  ['Will you guarantee more sales or a specific conversion rate?', 'No responsible CRO or marketing specialist can guarantee a specific sales result. I focus on making evidence-informed improvements, explaining the reasoning and checking the work. Results also depend on traffic quality, pricing, product-market fit, fulfilment and other business factors.'],
+  ['Can you provide ongoing support after the project?', 'Yes. Ongoing Shopify management and support can be discussed where you need regular store updates, product and collection management, quality checks or continued optimisation.'],
+  ['How do we begin?', 'Send your website or Shopify store URL, tell me what you want to achieve and mention any deadlines. I will review the brief and reply with a practical next step.'],
 ]
 
 function StorefrontDemo() {
@@ -178,6 +192,23 @@ export default function Home() {
           </div>
         </section>
 
+
+        <section className="visual-break" aria-label="Store growth statement">
+          <div className="visual-break-image" aria-hidden="true">
+            <img src={cases[0].image} alt="" loading="lazy"/>
+            <div className="visual-break-shape visual-break-shape-one"></div>
+            <div className="visual-break-shape visual-break-shape-two"></div>
+            <div className="visual-break-float visual-break-float-one"><span>01</span><b>Better product pages</b></div>
+            <div className="visual-break-float visual-break-float-two"><span>02</span><b>Smoother customer journeys</b></div>
+          </div>
+          <div className="visual-break-copy">
+            <p className="visual-kicker">DESIGN WITH A JOB TO DO</p>
+            <h2>Make every part of the store <em>earn its place.</em></h2>
+            <p>From the first impression to the final click, I bring design, usability and store performance into the same conversation.</p>
+            <a className="visual-link" href="#contact">Let's improve your store <span>↗</span></a>
+          </div>
+        </section>
+
         <section className="section process-section" id="process">
           <div className="container">
             <div className="section-heading">
@@ -221,11 +252,22 @@ export default function Home() {
           </div>
         </section>
 
+
+        <section className="image-ribbon" aria-label="Ecommerce services">
+          <div className="image-ribbon-photo"><img src={cases[1].image} alt="Expedition Nomad's Haven Shopify project" loading="lazy"/></div>
+          <div className="image-ribbon-content">
+            <span>THOUGHTFUL ECOMMERCE. PRACTICAL EXECUTION.</span>
+            <h2>Good stores don't happen by accident.</h2>
+            <a href="#work">Explore the projects <b>↗</b></a>
+          </div>
+          <div className="image-ribbon-photo image-ribbon-photo-last"><img src={cases[2].image} alt="Saint Phillip Street Gourmet Coffee Shopify project" loading="lazy"/></div>
+        </section>
+
         <section className="section faq-section" id="faq">
           <div className="container faq-layout">
             <div className="section-heading">
-              <h2 className="section-title">Good questions.<br/><span>Clear answers.</span></h2>
-              <p>A few things you may want to know before starting a project.</p>
+              <h2 className="section-title">Before we work together.<br/><span>What you should know.</span></h2>
+              <p>Practical answers about services, remote collaboration, communication, access, timelines, pricing and what to expect when we work together.</p>
             </div>
             <div className="faq-list">
               {faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}
