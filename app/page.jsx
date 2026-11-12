@@ -72,7 +72,7 @@ export default function Home() {
           <div className="container">
             <div className="growth-intro">
               <div className="growth-copy">
-                <div className="kicker"><span className="growth-kicker-dot" /> 02 / THE E-COMMERCE ADVANTAGE</div>
+                
                 <h2 className="growth-heading unified-section-title"><span className="growth-heading-line">TURN VISITS</span><span className="growth-heading-line title-accent">INTO SALES</span></h2>
                 <p className="growth-lede">A store performs when its storefront, buying journey and customer acquisition work together. I bring those pieces into one practical growth plan — from the first impression to the final click.</p>
                 <a className="growth-link" href="#services">See how I improve stores <span>↗</span></a>
@@ -81,7 +81,6 @@ export default function Home() {
               <div className="growth-visual" aria-label="Illustration of an ecommerce storefront, customer journey and advertising dashboard">
                 <div className="growth-orbit growth-orbit-one" />
                 <div className="growth-orbit growth-orbit-two" />
-                <div className="growth-visual-label">THE BIGGER PICTURE <span>01 — 03</span></div>
                 <div className="growth-store-window growth-tower-store">
                   <div className="growth-window-bar"><span /><span /><span /><b>tower28beauty.com</b></div>
                   <div className="growth-store-content">
@@ -133,27 +132,25 @@ export default function Home() {
                   <div className="growth-ads-head"><span className="growth-google-mark">G</span><b>CAMPAIGN OVERVIEW</b><i>↗</i></div>
                   <div className="growth-ads-title">Reach the right audience.</div>
                   <div className="growth-ads-bars"><span /><span /><span /><span /><span /><span /><span /></div>
-                  <div className="growth-ads-foot"><span>PLAN</span><span>LAUNCH</span><span>OPTIMIZE</span></div>
                 </div>
-                <div className="growth-visual-note"><span>DESIGN</span><b>×</b><span>CONVERSION</span><b>×</b><span>GROWTH</span></div>
               </div>
             </div>
 
             <div className="growth-pillars">
               <article className="growth-pillar">
-                <div className="growth-pillar-top"><span>01 / BUILD</span><span className="growth-pillar-icon">↗</span></div>
+                <div className="growth-pillar-top"><span className="growth-pillar-icon">↗</span></div>
                 <h3>Build a store customers trust.</h3>
                 <p>Create a polished, intuitive Shopify experience that makes your brand credible and helps visitors find what they need.</p>
                 <div className="growth-pillar-rule"><span /></div>
               </article>
               <article className="growth-pillar">
-                <div className="growth-pillar-top"><span>02 / OPTIMIZE</span><span className="growth-pillar-icon">↗</span></div>
+                <div className="growth-pillar-top"><span className="growth-pillar-icon">↗</span></div>
                 <h3>Turn more browsers into buyers.</h3>
                 <p>Improve product pages, strengthen trust signals and remove friction from the buying journey so more visitors complete their purchase.</p>
                 <div className="growth-pillar-rule"><span /></div>
               </article>
               <article className="growth-pillar">
-                <div className="growth-pillar-top"><span>03 / GROW</span><span className="growth-pillar-icon">↗</span></div>
+                <div className="growth-pillar-top"><span className="growth-pillar-icon">↗</span></div>
                 <h3>Bring the right people to your store.</h3>
                 <p>Build and manage Google Ads campaigns that connect your products with relevant shoppers and support sustainable growth.</p>
                 <div className="growth-pillar-rule"><span /></div>
@@ -162,12 +159,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section services-section" id="services"><div className="container"><div className="section-head services-section-head"><div className="services-heading-wrap"><div className="kicker">What I do</div><h2 className="unified-section-title"><span className="services-title-left">Shopify Store</span><span className="services-title-right title-accent">Built for Growth</span></h2></div><p className="muted">I manage and optimize Shopify stores to make every part of the customer journey work harder — from storefront experience and product pages to conversion improvements and ongoing store operations.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card service-card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="service-card-orbit" aria-hidden="true" /></article>)}</div></div></section>
+        <section className="section services-section" id="services"><div className="container"><div className="section-head services-section-head"><div className="services-heading-wrap"><h2 className="unified-section-title"><span className="services-title-left">Shopify Store</span><span className="services-title-right title-accent">Built for Growth</span></h2></div><p className="muted">I manage and optimize Shopify stores to make every part of the customer journey work harder — from storefront experience and product pages to conversion improvements and ongoing store operations.</p></div><div className="services">{services.map(([number, title, description]) => <article className="card service-card" key={number}><span className="card-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="service-card-orbit" aria-hidden="true" /></article>)}</div></div></section>
 
         <section className="section work-section" id="work">
           <div className="container">
             <div className="section-head work-section-head">
-              <div className="kicker">04 / SELECTED WORK</div>
+              
               <h2 className="work-headline unified-section-title"><span>Real stores.</span><span className="title-accent">Real impact.</span></h2>
               <p className="muted">A closer look at Shopify stores I’ve helped improve through thoughtful redesign, conversion-focused changes and customer acquisition.</p>
             </div>
@@ -178,14 +175,12 @@ export default function Home() {
                     <div className="work-image-frame">
                       <img src={item.image} alt={item.imageAlt} loading="lazy" />
                     </div>
-                    <span className="work-visual-index">{item.number} / 02</span>
                     <span className="work-visual-link">VIEW LIVE STORE ↗</span>
                   </a>
                   <div className="work-project-copy">
-                    <div className="work-project-meta"><span>{item.number}</span><span>{item.tag}</span></div>
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
-                    <div className="work-project-services"><span className="work-services-label">MY CONTRIBUTION</span>{item.services.map((service) => <span key={service}>{service}</span>)}</div>
+                    <div className="work-project-services">{item.services.map((service) => <span key={service}>{service}</span>)}</div>
                   </div>
                 </article>
               ))}
@@ -193,17 +188,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section section-process" id="process"><div className="container"><div className="section-head"><div><div className="kicker">How I work</div><h2 className="unified-section-title">A clear process. <span className="title-accent">Thoughtful execution.</span></h2></div><p className="muted">The work stays practical: understand what is happening, choose what matters, then make the store better.</p></div><div className="process-grid">{process.map(([number, title, description]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
+        <section className="section section-process" id="process"><div className="container"><div className="section-head"><div><h2 className="unified-section-title">A clear process. <span className="title-accent">Thoughtful execution.</span></h2></div><p className="muted">The work stays practical: understand what is happening, choose what matters, then make the store better.</p></div><div className="process-grid">{process.map(([number, title, description]) => <article key={number}><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
-        <section className="section section-dark" id="expertise"><div className="container"><div className="section-head"><div><div className="kicker">Other areas of expertise</div><h2 className="unified-section-title">More ways to <span className="title-accent">support your store.</span></h2></div><p className="muted">The wider skill set is here when the project needs it — without taking the focus away from Shopify growth.</p></div><div className="expertise-grid">{expertise.map(([title, description], index) => <article className="expertise-item" key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
+        <section className="section section-dark" id="expertise"><div className="container"><div className="section-head"><div><h2 className="unified-section-title">More ways to <span className="title-accent">support your store.</span></h2></div><p className="muted">The wider skill set is here when the project needs it — without taking the focus away from Shopify growth.</p></div><div className="expertise-grid">{expertise.map(([title, description], index) => <article className="expertise-item" key={title}><h3>{title}</h3><p>{description}</p></article>)}</div></div></section>
 
 
 
-        <section className="section" id="about"><div className="container about-box"><div><div className="kicker">About</div><h2 className="unified-section-title">An ecommerce specialist who thinks <span className="title-accent">beyond the homepage.</span></h2><p>I’m Ayomide, a Shopify manager and CRO-focused ecommerce specialist. I work across store operations, customer experience and conversion strategy so brands can improve the storefront without losing sight of the business behind it.</p><p>My approach is practical: understand what is happening, identify the biggest opportunities, then turn them into changes that can actually be implemented.</p></div><div className="about-list"><div><strong>Shopify</strong><span>Store management, customization &amp; optimization</span></div><div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages &amp; checkout</span></div><div><strong>Google Ads</strong><span>Campaign setup, management &amp; optimization</span></div><div><strong>E-commerce operations</strong><span>Products, merchandising, QA &amp; ongoing support</span></div></div></div></section>
+        <section className="section" id="about"><div className="container about-box"><div><h2 className="unified-section-title">An ecommerce specialist who thinks <span className="title-accent">beyond the homepage.</span></h2><p>I’m Ayomide, a Shopify manager and CRO-focused ecommerce specialist. I work across store operations, customer experience and conversion strategy so brands can improve the storefront without losing sight of the business behind it.</p><p>My approach is practical: understand what is happening, identify the biggest opportunities, then turn them into changes that can actually be implemented.</p></div><div className="about-list"><div><strong>Shopify</strong><span>Store management, customization &amp; optimization</span></div><div><strong>Conversion Rate Optimization</strong><span>Journey, UX, product pages &amp; checkout</span></div><div><strong>Google Ads</strong><span>Campaign setup, management &amp; optimization</span></div><div><strong>E-commerce operations</strong><span>Products, merchandising, QA &amp; ongoing support</span></div></div></div></section>
 
-        <section className="section" id="faq"><div className="container"><div className="section-head"><div><div className="kicker">FAQ</div><h2 className="unified-section-title">Useful answers <span className="title-accent">before we talk.</span></h2></div><p className="muted">A few of the questions buyers usually want answered before starting a Shopify project.</p></div><div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></div></section>
+        <section className="section" id="faq"><div className="container"><div className="section-head"><div><h2 className="unified-section-title">Useful answers <span className="title-accent">before we talk.</span></h2></div><p className="muted">A few of the questions buyers usually want answered before starting a Shopify project.</p></div><div className="faq-list">{faqs.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></div></section>
 
-        <section className="section" id="contact"><div className="container"><div className="contact"><div className="kicker">Have a store to improve?</div><h2 className="unified-section-title">Let&apos;s find the <span className="title-accent">opportunities</span> in your customer journey.</h2><p>Tell me what you are working on, where the store is struggling, or simply send the storefront. We can start from there.</p><div className="actions"><a className="btn btn-primary" href="mailto:joshuaben023@gmail.com?subject=Shopify%20Store%20Project">Email me →</a><a className="btn btn-secondary" href="#work">See the work</a></div></div></div></section>
+        <section className="section" id="contact"><div className="container"><div className="contact"><h2 className="unified-section-title">Let&apos;s find the <span className="title-accent">opportunities</span> in your customer journey.</h2><p>Tell me what you are working on, where the store is struggling, or simply send the storefront. We can start from there.</p><div className="actions"><a className="btn btn-primary" href="mailto:joshuaben023@gmail.com?subject=Shopify%20Store%20Project">Email me →</a><a className="btn btn-secondary" href="#work">See the work</a></div></div></div></section>
       </main>
       <footer className="site-footer">
         <div className="container">
@@ -213,14 +208,12 @@ export default function Home() {
               <p>Thoughtful Shopify management and conversion-focused ecommerce growth.</p>
             </div>
             <div className="footer-column">
-              <span className="footer-label">EXPLORE</span>
               <a href="#services">Services</a>
               <a href="#work">Selected work</a>
               <a href="#process">My process</a>
               <a href="#about">About</a>
             </div>
             <div className="footer-column">
-              <span className="footer-label">GET IN TOUCH</span>
               <a href="mailto:joshuaben023@gmail.com">Email me ↗</a>
               <a href="#contact">Start a project</a>
             </div>
