@@ -343,3 +343,25 @@
   .hero { min-height: auto !important; padding-top: 88px !important; }
   .inner, .portraitStage { min-height: 0 !important; }
 }
+
+
+/* Remove the excessive hero dead zone while retaining the portrait composition */
+.hero {
+  min-height: 620px !important;
+  padding-top: 78px !important;
+  padding-bottom: 0 !important;
+}
+.inner {
+  min-height: 540px !important;
+}
+.portraitStage {
+  min-height: 540px !important;
+}
+@media (max-width: 1050px) {
+  .hero { min-height: 600px !important; padding-top: 72px !important; }
+  .inner, .portraitStage { min-height: 520px !important; }
+}
+@media (max-width: 760px) {
+  .hero { min-height: auto !important; padding-top: 88px !important; }
+  .inner, .portraitStage { min-height: 0 !important; }
+}
