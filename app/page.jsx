@@ -83,21 +83,42 @@ export default function Home() {
                 <div className="growth-orbit growth-orbit-two" />
                 <div className="growth-visual-label">THE BIGGER PICTURE <span>01 — 03</span></div>
                 <div className="growth-store-window">
-                  <div className="growth-window-bar"><span /><span /><span /><b>YOUR STORE</b></div>
+                  <div className="growth-window-bar"><span /><span /><span /><b>atelierandco.com</b></div>
                   <div className="growth-store-content">
-                    <div className="growth-store-nav"><strong>brand.</strong><span>SHOP&nbsp;&nbsp; ABOUT&nbsp;&nbsp; CONTACT</span><i> BAG (0)</i></div>
-                    <div className="growth-store-hero">
-                      <div><small>MADE FOR EVERYDAY</small><strong>A better way<br/>to shop.</strong><em>Discover the collection <b>↗</b></em></div>
-                      <div className="growth-product-art" aria-label="Premium skincare bottle product mockup"><div className="growth-product-cap" /><div className="growth-product-bottle"><span className="growth-bottle-highlight" /><span className="growth-bottle-brand">FORME</span><span className="growth-bottle-name">DAILY<br/>SERUM</span><span className="growth-bottle-detail">30 ML / 1.0 FL.OZ</span></div></div>
+                    <div className="growth-store-announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $75</div>
+                    <div className="growth-store-nav">
+                      <strong>ATELIER<span>&amp;</span>CO.</strong>
+                      <span>NEW ARRIVALS&nbsp;&nbsp; SKINCARE&nbsp;&nbsp; OUR STORY</span>
+                      <i>SEARCH&nbsp;&nbsp; BAG (0)</i>
                     </div>
-                    <div className="growth-store-bottom"><span>FEATURED COLLECTION</span><span>01 / 04</span></div>
+                    <div className="growth-store-hero">
+                      <div className="growth-store-copy">
+                        <small>THE EVERYDAY EDIT · NO. 04</small>
+                        <strong>Good skin.<br/>Good days.</strong>
+                        <p>Thoughtful essentials for your daily ritual.</p>
+                        <em>SHOP THE COLLECTION <b>↗</b></em>
+                      </div>
+                      <div className="growth-product-art" aria-label="Premium skincare serum product display">
+                        <span className="growth-product-sun" />
+                        <div className="growth-product-cap" />
+                        <div className="growth-product-bottle"><span className="growth-bottle-highlight" /><span className="growth-bottle-brand">ATELIER</span><span className="growth-bottle-name">DAILY<br/>SERUM</span><span className="growth-bottle-detail">30 ML / 1.0 FL.OZ</span></div>
+                        <span className="growth-product-shadow" />
+                      </div>
+                    </div>
+                    <div className="growth-store-collection-head"><span>BESTSELLERS</span><span>SHOP ALL&nbsp; ↗</span></div>
+                    <div className="growth-store-products">
+                      <div><span className="growth-mini-product growth-mini-one" /><b>Daily Hydration Serum</b><small>$34.00</small></div>
+                      <div><span className="growth-mini-product growth-mini-two" /><b>Soft Cleanse Wash</b><small>$28.00</small></div>
+                      <div><span className="growth-mini-product growth-mini-three" /><b>Restore Face Cream</b><small>$42.00</small></div>
+                    </div>
                   </div>
                 </div>
                 <div className="growth-mobile-window">
-                  <div className="growth-mobile-top"><span /><b>brand.</b><span>☰</span></div>
-                  <div className="growth-mobile-art"><div className="growth-mobile-product"><span className="growth-mobile-cap" /><span className="growth-mobile-bottle"><b>FORME</b><i>DAILY<br/>SERUM</i></span></div></div>
-                  <div className="growth-mobile-lines"><span /><span /><span /></div>
-                  <div className="growth-mobile-button">EXPLORE COLLECTION</div>
+                  <div className="growth-mobile-top"><span>☰</span><b>ATELIER<span>&amp;</span>CO.</b><span>♧</span></div>
+                  <div className="growth-mobile-announcement">COMPLIMENTARY SHIPPING OVER $75</div>
+                  <div className="growth-mobile-copy"><small>THE EVERYDAY EDIT</small><strong>Good skin.<br/>Good days.</strong><p>Thoughtful essentials for your daily ritual.</p><b>SHOP NOW&nbsp; ↗</b></div>
+                  <div className="growth-mobile-art"><div className="growth-mobile-product"><span className="growth-mobile-cap" /><span className="growth-mobile-bottle"><b>ATELIER</b><i>DAILY<br/>SERUM</i></span></div></div>
+                  <div className="growth-mobile-product-meta"><b>Daily Hydration Serum</b><span>$34.00</span></div>
                 </div>
                 <div className="growth-ads-card">
                   <div className="growth-ads-head"><span className="growth-google-mark">G</span><b>CAMPAIGN OVERVIEW</b><i>↗</i></div>
