@@ -305,3 +305,20 @@
   }
   .primaryAction,.secondaryAction { transition: none !important; }
 }
+
+
+/* Site-wide headline rhythm: hero and section titles share one scale */
+.title {
+  font-size: clamp(44px, 4.15vw, 58px) !important;
+  line-height: .99 !important;
+  letter-spacing: -.065em !important;
+}
+@media (max-width: 1050px) {
+  .title { font-size: clamp(42px, 5.1vw, 54px) !important; }
+}
+@media (max-width: 760px) {
+  .title { font-size: clamp(36px, 7.5vw, 46px) !important; line-height: 1 !important; }
+}
+@media (max-width: 480px) {
+  .title { font-size: clamp(32px, 8.2vw, 39px) !important; line-height: 1.02 !important; }
+}
