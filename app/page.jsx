@@ -25,7 +25,6 @@ const cases = [
   {
     number: '01',
     title: 'Evaness Biodegradable',
-    category: 'Sustainable everyday essentials',
     description: 'A more considered Shopify shopping experience for a brand focused on biodegradable and recycled everyday products.',
     contribution: 'Shopify redesign, conversion-focused improvements, Google Ads setup and campaign management.',
     image: 'https://raw.githubusercontent.com/j0shua-ben/Ayomide-Joshua/main/f.png',
@@ -36,7 +35,6 @@ const cases = [
   {
     number: '02',
     title: "Expedition Nomad's Haven",
-    category: 'Premium food & beverage',
     description: 'A refined storefront for a Belgian hot chocolate brand, designed to make product discovery and the shopping journey feel clearer.',
     contribution: 'Shopify redesign, conversion-focused improvements, Google Ads setup and campaign management.',
     image: '/images/pp.PNG',
@@ -47,7 +45,6 @@ const cases = [
   {
     number: '03',
     title: 'Saint Phillip Street Gourmet Coffee',
-    category: 'Specialty coffee & tea',
     description: 'A refreshed Shopify experience with stronger product presentation and clearer trust signals for a specialty coffee and tea brand.',
     contribution: 'Store redesign, trust elements, customer reviews, product SEO, Google Merchant Center and Search Console fixes.',
     image: 'https://raw.githubusercontent.com/j0shua-ben/Ayomide-Joshua/main/p.png',
@@ -150,7 +147,6 @@ export default function Home() {
                     <span>View live store ↗</span>
                   </a>
                   <div className="case-copy">
-                    <p className="case-category">{item.category}</p>
                     <h3>{item.title}</h3>
                     <p className="case-description">{item.description}</p>
                     <div className="case-contribution"><strong>My contribution</strong><p>{item.contribution}</p></div>
@@ -174,7 +170,6 @@ export default function Home() {
             <div className="service-grid">
               {services.map(([title, description], index) => (
                 <article className="service-card" key={title}>
-                  <span className="service-index">{String(index + 1).padStart(2, '0')}</span>
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </article>
@@ -192,7 +187,6 @@ export default function Home() {
             <div className="process-grid">
               {process.map(([title, description], index) => (
                 <article key={title}>
-                  <span>{String(index + 1).padStart(2, '0')}</span>
                   <h3>{title}</h3>
                   <p>{description}</p>
                 </article>
