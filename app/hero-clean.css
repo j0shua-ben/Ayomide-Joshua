@@ -4489,3 +4489,50 @@ main .growth-copy h2 {
 @media (prefers-reduced-motion: reduce) {
   .tower-store-track { animation: none !important; transform: none !important; }
 }
+
+
+/* Remove decorative micro-labels and editorial eyebrow text site-wide */
+main .kicker,
+main .growth-visual-label,
+main .footer-label,
+main .work-services-label {
+  display: none !important;
+}
+
+/* Restore the phone preview to its original compact device footprint.
+   It intentionally shows the top of the same storefront, not a full-page capture. */
+.tower-mobile-window {
+  width: 27% !important;
+  min-width: 116px !important;
+  max-width: 190px !important;
+  height: 218px !important;
+  max-height: 218px !important;
+  top: 190px !important;
+  right: 1% !important;
+  padding: 8px !important;
+  overflow: hidden !important;
+  border-radius: 21px !important;
+}
+.tower-mobile-window .tower-mobile-hero {
+  padding: 9px 5px 4px !important;
+}
+.tower-mobile-window .tower-mobile-hero img {
+  height: 66px !important;
+}
+.tower-mobile-window .tower-mobile-product {
+  padding-top: 6px !important;
+}
+.tower-mobile-window .tower-mobile-product img {
+  height: 58px !important;
+}
+@media (max-width: 760px) {
+  .tower-mobile-window {
+    width: 27% !important;
+    min-width: 116px !important;
+    max-width: 190px !important;
+    height: 218px !important;
+    max-height: 218px !important;
+    top: 190px !important;
+    right: 1% !important;
+  }
+}
